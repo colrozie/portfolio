@@ -1,0 +1,59 @@
+﻿/* section */
+#mainSection{width: 1420px; height: 748px; margin: 0 auto; padding-top: 150px; margin-bottom: 130px;}
+
+/* asideL */
+#asideL{width: 200px;}
+#asideL{letter-spacing: -1px;}
+#asideL p{color: #adb5bd; margin: 20px 0; font-size: 12px; font-weight: bold;}
+#asideL ul{margin: 0 auto;}
+#asideL ul li{margin: 20px 0;}
+#asideL ul li a{text-decoration: none; color: #343a40; margin-left: 10px;}
+#asideL ul li a:hover{color: #dee2e6;}
+
+#sign{width: 1200px; margin: 0 auto;}
+#signRight{width: 420px; margin: 0 auto;}
+
+	#mainSection h2{height: 40px; font-size: 29px; color: #000a12;}
+	.slideM{margin-bottom: 57px;}
+	.slideM p{width: 373px; float: left; font-size: 17px; overflow: hidden; white-space: nowrap;}
+	#mainSection form{height: 412px; margin-bottom: 65px;}
+	#mainSection form div{font-size: 15px; font-weight: bold; color: #3e4042;}	
+	#mainSection form h3{font-size: 15px; color: #3e4042; margin-bottom: -14px;}	
+	#mainSection form input{width: 96%; height: 58px; margin: 0 auto; background: #ffffff; font-size: 18px; color: #ced4da; margin-bottom: 30px; border: 1px solid #dee2e6; border-radius: 5px; padding-left: 13px;}
+	#mainSection input:focus{outline: 1px solid #00c471;}
+	.signBtn{width: 100%; height: 57px; border-radius: 5px; background: #00c471; font-size: 16px; font-weight: bold; color: #ffffff; margin-bottom: 15px; cursor: pointer;}
+
+	.privacy{height: 43px; margin-bottom: 44px;}
+	.privacy p{font-size: 13px; text-align: center; color: #858a8d; margin-bottom: 8px;}
+	.privacy p span{color: #1964d5;}
+	.privacy label{display: block; font-size: 13px; text-align: center; color: #858a8d; margin: 0 auto;}
+
+	.signSocial{width: 100%; height: 88px;}
+	.signSocial .signBot{width: 300px; margin: 0 auto; text-align: center;}
+	.signSocial span{display: block; font-size: 11.5px; font-weight: bold; color: #abb0b5; margin: 0 auto; float: left;}
+	.signSocial span.line{width: 100px; height: 1px; margin-top: 5px; background-color: #e3e5e7;}
+	.signSocial span.lineT{padding: 0 8px;}
+	.signSocial .socialImg{width: 130px; margin: 0 auto; padding-top: 17px;}
+	.signSocial .socialImg a{width: 60px; float: left;}
+	.signSocial .socialImg .kakao{padding-right: 2px;}
+	.signSocial .socialImg .google{padding-left: 2px;}
+
+/* applySection */
+#apply{width: 100%; /* background: #f9f9f9; */ padding: 68px 0 0;}
+	#apply .applyWrap{width: 1420px; margin: 0 auto;}
+	#apply .applyWrap .applyCon{width: 1040px; margin: 0 auto;}
+	#apply .applyWrap .applyCon > div{width: 300px; border-top: 1px solid #dadada; padding: 68px 0;}
+	#apply .applyWrap .applyCon > div:hover{background: #f9fafb; transition: all .3s;}
+	#apply .applyWrap .applyCon img{vertical-align: middle; width: 70px; margin: 0 117px; margin-bottom: 30px;}
+	#apply .applyWrap .applyCon .card1{margin-left: 140px;}
+	#apply .applyWrap p.title{font-size: 19px; letter-spacing: -2px; color: #838383; text-align: center; line-height: 1.5; margin-bottom: 30px;}
+	#apply .applyWrap .button{margin: 0 auto; width: 230px;}
+	#apply .applyWrap .button a{padding: 20px 15px; color: #646473; font-weight: bold; font-size: 18px; text-align: center; border-radius: 10px; background: #eff3fa;}
+
+
+
+	/* #apply .applyWrap .card p.title{font-size: 22px; letter-spacing: -2px; color: #363636; font-weight: bold; text-align: center;}
+	#apply .applyWrap .card p.con{color: #757575; font-size: 17px; letter-spacing: 0; line-height: 1.6; margin: 16px 0; text-align: center;}
+	#apply .applyWrap .card p.button{margin: 0 auto; width: 150px;}
+	#apply .applyWrap .fr p.button{margin: 0 auto; width: 178px;}
+	#apply .applyWrap .card p.button a{padding: 10px 15px; background: #1dc078; color: #ffffff; font-weight: bold; font-size: 20px; border-radius: 5px;} */

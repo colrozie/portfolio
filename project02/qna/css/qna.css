@@ -1,0 +1,56 @@
+﻿#section{width: 1420px; margin: 0 auto;}
+#qnaAsideL{width: 300px;}
+#faqWrap{width: 1120px; margin: 110px 0 0;}
+
+/* asideL */
+#qnaAsideL form{padding-top: 110px;}
+#qnaAsideL form p.title{font-size: 20px; border: 1px solid #e4e4e4; padding: 14px 24px; width: 124px; border-radius: 4px 4px 0 0; background: #f9f9f9;}
+#qnaAsideL form p.title img{vertical-align: middle;}
+#qnaAsideL form p.checkOp{border: 1px solid #e4e4e4; border-top: none; font-size: 18px; padding: 14px; width: 144px; border-radius: 0 0 4px 4px; background: #ffffff;}
+#qnaAsideL form p label{cursor: pointer; padding: 8px 12px; display: block;}
+
+/* faqBoardHeader 게시판 네비*/
+#faqBoard .faqBoardHeader{height: 50px; line-height: 50px; letter-spacing: -1px;}
+#faqBoard .faqBoardHeader ul{list-style: none; vertical-align: middle;}
+#faqBoard .faqBoardHeader ul li{float: left;}
+#faqBoard .faqBoardHeader ul li a{padding: 0 20px 0 20px; text-decoration: none; color: #454545; border-bottom: 1px solid #dee2e6;}
+#faqBoard .faqBoardHeader .active a{color: #00c471; border: 1px solid #dee2e6; border-radius: 5px 5px 0 0; border-bottom: none; background: #ffffff;}
+#faqBoard .faqBoardHeader li a:hover{cursor: pointer; color: #3e4042;}
+#faqBoard .faqBoardHeader .active a:hover{cursor: default; color: #00c471;}
+#faqBoard .faqBoardHeader img{margin-right: 10px; vertical-align: middle;}
+
+/* faqHeading 게시판 타이틀*/
+#faqBoard .faqHeading{padding: 50px 50px;}
+
+#faqBoard .dvider{width: 100%; border-top: 1px solid #dee2e6;}
+#faqBoard .faqHeading h2{text-align: left; color: #1b1c1d; margin: 10px 0;}
+#faqBoard .faqHeading{background: url(../images/know.png) no-repeat 940px;}
+
+/* faqSection 게시판 내용*/
+#faqBoard .faqSection{border-left: 1px solid #dee2e6; border-right: 1px solid #dee2e6; width: 1120px; border-bottom: 1px solid #dee2e6;}
+#faqBoard .faqTitle:before{content: url(../images/plus.png); margin-right: 10px;}
+#faqBoard .faqTitle{cursor: pointer; width: 1100px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 20px 0 20px 20px; font-size: 16px; background: #f9f9f9; border-top: 1px solid #dee2e6;}
+#faqBoard .faqSection .faqContent{height: auto; text-align: left; padding: 30px 50px; width: 1020px; line-height: 1.7; display: none; white-space: pre;}
+/* #faqBoard */
+
+/* faqGrade 평점*/
+#faqGrade{text-align: center; padding: 50px;}
+#faqGrade .gradeTitle{margin-bottom: 20px; font-size: 20px; font-weight: bold;}
+#faqGrade .gradeSt{margin-bottom: 30px; font-size: 20px;}
+#faqGrade .gradeSt span{margin-right: 20px;}
+#faqGrade .gradeSt span.last{margin: 0;}
+#faqGrade .g5 i{background: url(../images/graderStar.png) repeat-x 0 center; width: 140px; height: 22px; vertical-align: bottom; display: inline-block;}
+#faqGrade .g4 i{background: url(../images/graderStar.png) repeat-x 0 center; width: 112px; height: 22px; vertical-align: bottom; display: inline-block;}
+#faqGrade .g3 i{background: url(../images/graderStar.png) repeat-x 0 center; width: 84px; height: 22px; vertical-align: bottom; display: inline-block;}
+#faqGrade .g2 i{background: url(../images/graderStar.png) repeat-x 0 center; width: 56px; height: 22px; vertical-align: bottom; display: inline-block;}
+#faqGrade .g1 i{background: url(../images/graderStar.png) repeat-x 0 center; width: 28px; height: 22px; vertical-align: bottom; display: inline-block;}
+#faqGrade .gradeOp input{width: 800px; vertical-align: middle; font-size: 16px; border-radius: 5px; padding: 20px; border: 1px solid #dee2e6; margin-right: 5px;}
+#faqGrade .gradeOp button{width: 100px; height: 60px; font-size: 16px; vertical-align: middle; border-radius: 5px; background-color: #00c471; color: #ffffff; border: 1px solid #dee2e6; font-weight: bold;}
+#faqGrade input:focus{outline: 1px solid #00c471; border: 1px solid #00c471;}
+#faqGrade button:hover{cursor: pointer;}
+#faqGrade .gradeSt input:hover{cursor: pointer;}
+
+/* faqAsk */
+#faqAsk{padding: 30px 80px 80px;}
+#faqAsk p{text-align: center; margin: 10px 0; color: #000a12; font-size: 19px; font-weight: bold;}
+#faqAsk p span{color: #00c471;}

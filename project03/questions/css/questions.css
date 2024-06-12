@@ -1,0 +1,124 @@
+﻿/* mainHeader */
+#mainHeader{width: 100%; padding: 100px 0 20px; background-color: #333b3d;}
+#mainHeader h2, #mainHeader p{width: 1420px; margin: 0 auto; color: #ffffff; padding: 5px 0; font-weight: bold;}
+
+/* mainSection 크기 지정 */
+#section{width: 1420px; margin: 0 auto;}
+
+/* asideL */
+#asideL{width: 250px; height: 100%; padding-top: 50px;}
+	#asideL>ul>li>a{font-size: 1.188em; font-weight: bold; color: #595959; text-align: left; width: 180px; height: 59px; line-height: 59px; padding-left: 19px; background: #fafafa; border: 1px solid #e4e4e4;}
+	#asideL>ul>li>a>img{float: right; padding: 23px 8px 0 0;}
+	#asideL .sub{display: none;}
+	#asideL .sub a{font-size: 1em; color: #595959; text-align: left; width: 180px; height: 44px; line-height: 44px; padding-left: 19px; background: #ffffff; border: 1px solid #e4e4e4;}
+	#asideL .sub a:hover{background: #f5f5f5;}
+
+/* asideR */
+#asideR{width: 250px;}
+#asideR ul{padding: 16px 8px 16px 12px; border: 1px solid #dee2e6; margin-top: 35px; width: 174px; border-radius: 5px;}
+#asideR .title{color: #9797a6; margin-bottom: 16px; height: 20px;font-size: 0.875em; letter-spacing: -1px;}
+#asideR ul a{display: block; float: left; background-color: #eff3fa; color: #646473; border-radius: 5px; margin: 0 4px 10px 0; font-size: 0.813em; padding: 8px 4px; letter-spacing: -0.3px;}
+
+/* commWrap nav 탭 */
+#commWrap{width: 920px; margin-top: 32px;}
+#commWrap nav{height: 50px; line-height: 50px; border-bottom: 1px solid #dee2e6; margin-bottom: 35px; font-weight: bold;}
+#commWrap nav ul li{float: left;}
+#commWrap nav ul li a{display: block; padding: 0 16px; text-align: center; color: #dee2e6;}
+#commWrap nav ul li a:hover{color: #3e4042; border-bottom: 2px solid #3e4042; height: 49px;}
+#commWrap nav ul li.active a{color: #3e4042; border-bottom: 2px solid #3e4042; cursor: default; height: 49px;}
+
+/* searchWrap 게시판 검색*/
+#searchWrap{margin-bottom: 50px;}
+#searchWrap fieldset{width: 100%;}
+#searchWrap input{width: 80%; border: 1px solid #dee2e6; padding: 20px 20px 20px 40px; border-radius: 5px; margin-bottom: 20px; vertical-align: middle; font-size: 1em;}
+#searchWrap button{width: 11%; height: 60px; background-color: #00c471; color: #ffffff; border-radius: 5px; vertical-align: middle; font-size: 1em; font-weight: bold;}
+#searchWrap button[type="reset"]{background-color: #ffffff; color: #333b3d; background: url(../images/ik9.png) 10% no-repeat; padding-right: 10px; text-align: right; font-size: 1em;}
+#searchWrap button:hover{cursor: pointer;}
+#searchWrap input:focus{outline: 1px solid #00c471; border: 1px solid #00c471;}
+#searchWrap input[name="searchBar"]{background: url(../images/ik11.png) no-repeat 15px center;}
+#searchWrap input[name="tagBar"]{background: url(../images/ik12.png) no-repeat 15px center;}
+
+/* boardHeader 게시판 네비*/
+#board .boardHeader{height: 50px; border-bottom: 1px solid #dee2e6; color: #dee2e6; line-height: 50px;}
+#board .boardHeader ul{vertical-align: middle;}
+#board .boardHeader button{width: 100px; height: 50px; background-color: #3e4042; color: #ffffff; border-radius: 5px; margin: -15px 0; font-size: 0.875em; font-weight: bold; line-height: 50px;}
+#board .boardHeader ul li a{display: block;  padding: 0 16px; color: #abb0b5; font-size: 0.875em; font-weight: bold;}
+#board .boardHeader ul li .mobile{display: none;}
+#board .boardHeader ul li a:hover{color: #1b1c1d; border-bottom: 2px solid #1b1c1d; height: 49px;}
+#board .boardHeader ul li a:hover{color: #1b1c1d; border-bottom: 2px solid #1b1c1d; height: 49px;}
+#board .boardHeader ul li.active a{color: #1b1c1d; border-bottom: 2px solid #1b1c1d; cursor: default; height: 49px;}
+#board .boardHeader button:hover{cursor: pointer;}
+
+/* questionWrap 게시판 세부*/
+#board .questionWrap{height: auto; padding: 30px; border-bottom: 1px solid #dee2e6;}
+#board .questionInfo{width: 85%;}
+#board .questionTitle, #board .questionContent{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#board .questionTitle{margin-bottom: 20px; color: #1b1c1d; font-size: 18px; font-weight: bold;}
+#board .questionContent{margin-bottom: 20px; color: #616568; font-size: 15px;}
+#board .questionTag{font-size: 14px; color: #858a8d;}
+#board .questionWrap:hover{background-color: #f3f4f7; cursor: pointer;}
+#board .questionComment{width: 70px; text-align: center; height: 100%; position: relative; float: right;}
+#board .commentBtn{height: 70px; width: 70px; background: #ffffff; border-radius: 50%; box-sizing: border-box; border: 1px solid #dee2e6;}
+#board .commentA{position: absolute; top: 0; left: 23px;}
+#board .commentCount{font-size: 1.125em; color: #1b1c1d; padding: 14px 0 5px;}
+#board .commentAnswer{font-size: 0.750em; color: #616568;}
+#board .commentLike{height: 30px; line-height: 30px; font-size: 0.875em; color: #495057;}
+#board .commentLike i{background: url(../images/heart.png) no-repeat; width: 13px; height: 13px; display: inline-block;}
+
+/* page 페이지 번호*/
+#page{position: relative; margin: 55px 0 70px;}
+.pageNumber{position: relative; float: left; left: 50%;}
+.pageNumber div{position: relative; float: left; left: -50%; padding: 5px 10px; margin: 0 6px; cursor: pointer; border: 1px solid #dee2e6; border-radius: 5px; color: #363636; font-size: 0.750em;}
+#page .prev{position: absolute; left: 0; top: 0;}
+#page .next{position: absolute; right: 0; top: 0;}
+#page button{background-color: #ffffff; color: #363636; font-size: 0.750em; padding: 5px 10px; border-radius: 5px; color: #363636; border: 1px solid #dee2e6;}
+.pageNumber div:hover{border: 1px solid #616568;}
+#page button:hover{cursor: pointer; border: 1px solid #616568;}
+#page .active{cursor: default; background-color: #00c471; color: #ffffff;}
+#page .active:hover{border: 1px solid #dee2e6;}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+	#asideR{display: none;}
+	#asideL{display: none;}
+	#section{width: 100%;}
+	#mainHeader{width: 100%;}
+	#commWrap{width: 90%; margin: 0 auto; float: none;}
+	#mainHeader h2, #mainHeader p{width: 90%; margin: 0 auto;}
+	#searchWrap input{width: 80%; padding: 2% 2% 2% 5%;}
+	#searchWrap button{height: auto; padding: 2%;}
+	#searchWrap button[type="reset"]{padding-right: 3px;}
+	
+} /* 태블릿 */
+
+
+
+@media screen and (max-width:767px) {
+	#asideR{display: none;}
+	#asideL{display: none;}
+	#section{width: 100%;}
+	#mainHeader{width: 100%;}
+	#commWrap{width: 90%; margin: 0 auto; float: none;}
+	#mainHeader h2, #mainHeader p{width: 90%; margin: 0 auto;}
+	#searchWrap{margin-bottom: 30px;}
+	#searchWrap button{display: none;}
+	#searchWrap input{width: 89%; padding: 2% 2% 2% 9%;}
+	#board .boardHeader button{width: 40px; margin: 0; height: 40px;}
+	#board .boardHeader ul li .default{display: none;}
+	#board .boardHeader ul li .mobile{display: block;}
+	#board .questionInfo{width: 100%; float: none; margin-bottom: 5px;}
+	#board .questionComment{float: none; margin: 0 auto;}
+	.commentBtn, .commentA{display: none;}
+	#page button{padding: 5px 5px}
+	#page .pageNumber{width: auto; transform: translate(-50%, 0);}
+	#page .pageNumber div{margin: 0 3px; left: 0;}
+	#page .pageNumber .dn{display: none;}
+} 
+
+
+
+
+
+
+
+
+

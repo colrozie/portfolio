@@ -1,0 +1,52 @@
+﻿/*===== reset =====*/
+*{margin: 0; padding: 0;}
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+html{scroll-behavior: smooth !important;}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+a { 
+    text-decoration: none;
+    color: #353738;
+}
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl{float: left;}
+.fr{float: right;}
+.blind {
+    position: absolute;
+    overflow:hidden;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    clip:rect(0 0 0 0);
+}
+
+

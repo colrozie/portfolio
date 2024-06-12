@@ -1,0 +1,1936 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="N분의 1" />
+	<meta name="keywords" content="Home, Index, N분의 1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- AND 홈화면 추가시 상단 주소창 제거 -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<!-- IOS 홈화면 추가시 상단 주소창 제거 -->
+	<meta name="mobile-mobile-web-app-capable" content="yes">
+	<title>N분의 1</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet"> <!-- noto sans kr 한글 폰트 -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet"> <!-- roboto 영문폰트 -->
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/map.js"></script>
+
+	<link rel="stylesheet" href="css/conversation.css" type="text/css" />
+	<link rel="stylesheet" href="css/conversation_Bounce.css" type="text/css" />
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/chat.css" type="text/css" />
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/chat.js"></script>
+</head>
+<body>
+    <div data-role="page" id="onboard1" class="onboardCom commonCon">
+        <div data-role="content">
+			<img src="images/n.png" alt="logo"/>
+			<div class="onImg">
+				<img src="images/onboard1.png" alt="onboard1"/>
+			</div>
+			<h2>내가 가진 것을 N분의 1로!</h2>
+			<h6>
+				대용량으로 구매해야 저렴한 상품을<br/>
+				보신 적 있나요? 혼자서도<br/>
+				이젠 어렵지 않게 나눠봐요!<br/>
+			</h6>
+			<div class="indicator">
+				<div class="on"></div>
+				<div></div>
+				<div></div>
+			</div>
+			<a class="button" href="#onboard2">Next</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="onboard2" class="onboardCom">
+        <div data-role="content">
+			<img src="images/n.png" alt="logo"/>
+			<div class="onImg">
+				<img src="images/onboard2.png" alt="onboard2"/>
+			</div>
+			<h2>배달음식도 N분의 1!</h2>
+			<h6>
+				배달비가 고민이거나 혼자 먹기엔 <br/>
+				양이 너무 많으신가요? <br/>
+				N분의 1어플로 나눠보세요! <br/>
+			</h6>
+			<div class="indicator">
+				<div></div>
+				<div class="on"></div>
+				<div></div>
+			</div>
+			<a class="button" href="#onboard3">Next</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="onboard3" class="onboardCom">
+        <div data-role="content">
+			<img src="images/n.png" alt="logo"/>
+			<div class="onImg">
+				<img src="images/onboard3.png" alt="onboard3"/>
+			</div>
+			<h2>무엇이든 나눌 수 있다면 OK!</h2>
+			<h6>
+				새로 산 물건도, 사고 싶은 음식도 <br/>
+				가지고 있지만 처치곤란인 물건 <br/>
+				모두 N분의 1로! <br/>
+			</h6>
+			<div class="indicator">
+				<div></div>
+				<div></div>
+				<div class="on"></div>
+			</div>
+			<a class="button" href="#tuto1">Tutorial</a>
+			<a class="tutoBtn" href="#signup">Skip Tutorial</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="tuto1" class="tutoCom">
+		<a href="#tuto2" class="tutoLink"></a>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#location1" data-role="button"><img src="images/header1.png" alt="위치 아이콘"/></a></li>
+				<li><a href="#main" data-role="button"><img src="images/n.png" alt="로고"/></a></li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+			<div class="dash dash1"></div>
+			<div class="dash dash2"></div>
+			<p class="tip tip1">현재 위치를 설정할 수 있습니다.</p>
+			<p class="tip tip2">전체 카테고리 메뉴입니다.</p>
+        </div>
+        <div data-role="content">
+			<a href="#tuto2"><img src="images/touch.png" alt="터치포인터" class="touch"/></a>
+            <div class="tutoBg"><a href="#tuto2"></a></div>
+            <label>
+				<input type="text" name="return" id="search" placeholder="search"/>
+			</label>
+            <div class="tag">
+                <h3>인기 태그</h3>
+                <ul>
+                    <li><a href="#">#무료</a></li>
+                    <li><a href="#">#택배나눔</a></li>
+                    <li><a href="#">#배달</a></li>
+                    <li><a href="#">#벼룩나눔</a></li>
+                </ul>
+            </div>
+            <div class="con1 contents">
+                <h3>원하는 상품을 N/1로 나눠보세요!</h3>
+                <ul>
+                    <li><a href="#"><img src="images/clipboard.png" alt="최신글"></a></li>
+                    <li><a href="#"><img src="images/gift.png" alt="묶음상품"></a></li>
+                    <li><a href="#"><img src="images/shipping truck.png" alt="배달"></a></li>
+                    <li><a href="#"><img src="images/Internet.png" alt="해외직구"></a></li>
+                </ul>
+				<div class="categoryName">
+					<p>최신글</p>
+					<p>묶음상품</p>
+					<p>배달</p>
+					<p>해외직구</p>
+				</div>
+            </div>
+            <div class="con2 contents">
+                <h3>최신글</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb1.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>안양 6동 파파존스 피자 나눠요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 6,000/5</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb2.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>나우푸드 영양제 직구 나눔해요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 6분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 54,000/4</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>스너글 섬유탈취제 2+1 1개씩 팜</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 8,000/3</p>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con3 contents">
+                <h3>쇼핑하기</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb4.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>대형 고체 카레 1+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb5.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>순면 프리미엄 화장지</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.8</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb6.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>무드등 간접조명 세트</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.7</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb7.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>오트밀 시리얼 2+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBtn">더 보기</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer11.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+			<ul class="footerDash">
+				<li>
+					<div class="dash dash3"></div>
+				</li>
+				<li>
+					<div class="dash dash4"></div>
+				</li>
+				<li>
+					<div class="dash dash5"></div>
+				</li>
+				<li>
+					<div class="dash dash6"></div>
+				</li>
+			</ul>
+			<p class="tip tip3">홈 / 충전하기 / 대화기능 / 내 정보 페이지로 이동가능합니다.</p>
+        </div>
+    </div>
+
+    <div data-role="page" id="tuto2" class="tutoCom">
+		<a href="#tuto3" class="tutoLink"></a>
+		<div class="tutoBg"><a href="#tuto3"></a></div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#location1" data-role="button"><img src="images/header1.png" alt="위치 아이콘"/></a></li>
+				<li><a href="#main" data-role="button"><img src="images/n.png" alt="로고"/></a></li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+        </div>
+        <div data-role="content">
+			<a href="#tuto3"><img src="images/touch.png" alt="터치포인터" class="touch"/></a>
+            <label>
+				<input type="text" name="return" id="search" placeholder="search"/>
+				<div class="dash dash1"></div>
+				<p class="tip tip1">전체 글에 대하여 키워드 검색이 가능합니다.</p>
+			</label>
+            <div class="tag">
+				<div class="dash dash2"></div>
+				<p class="tip tip2">실시간 인기 키워드를 알 수 있습니다.</p>
+                <h3>인기 태그</h3>
+                <ul>
+                    <li><p></p><a href="#"># 무료</a></li>
+                    <li><p></p><a href="#"># 택배나눔</a></li>
+                    <li><p></p><a href="#"># 배달</a></li>
+                    <li><p></p><a href="#"># 벼룩나눔</a></li>
+                </ul>
+            </div>
+            <div class="con1 contents">
+                <h3>원하는 상품을 N/1로 나눠보세요!</h3>
+                <ul>
+                    <li><a href="#"><img src="images/clipboard.png" alt="최신글"></a></li>
+                    <li><a href="#"><img src="images/gift.png" alt="묶음상품"></a></li>
+                    <li><a href="#"><img src="images/shipping truck.png" alt="배달"></a></li>
+                    <li><a href="#"><img src="images/Internet.png" alt="해외직구"></a></li>
+                </ul>
+				<div class="categoryName">
+					<p>최신글</p>
+					<p>묶음상품</p>
+					<p>배달</p>
+					<p>해외직구</p>
+				</div>
+            </div>
+            <div class="con2 contents">
+                <h3>최신글</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb1.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>안양 6동 파파존스 피자 나눠요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 6,000/5</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb2.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>나우푸드 영양제 직구 나눔해요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 6분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 54,000/4</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>스너글 섬유탈취제 2+1 1개씩 팜</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 8,000/3</p>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con3 contents">
+                <h3>쇼핑하기</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb4.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>대형 고체 카레 1+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb5.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>순면 프리미엄 화장지</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.8</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb6.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>무드등 간접조명 세트</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.7</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb7.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>오트밀 시리얼 2+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBtn">더 보기</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer11.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="tuto3" class="tutoCom">
+		<a href="#tuto4" class="tutoLink"></a>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#location1" data-role="button"><img src="images/header1.png" alt="위치 아이콘"/></a></li>
+				<li><a href="#main" data-role="button"><img src="images/n.png" alt="로고"/></a></li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+        </div>
+        <div data-role="content">
+			<a href="#tuto4"><img src="images/touch.png" alt="터치포인터" class="touch"/></a>
+            <div class="tutoBg"><a href="#tuto4"></a></div>
+            <div class="con1 contents">
+                <h3>원하는 상품을 N/1로 나눠보세요!</h3>
+				<p class="tip tip1">전체 카테고리를 한 눈에 볼 수 있습니다.</p>
+				<div class="dash dash1"></div>
+                <ul>
+                    <li><a href="#"><img src="images/clipboard.png" alt="최신글"></a></li>
+                    <li><a href="#"><img src="images/gift.png" alt="묶음상품"></a></li>
+                    <li><a href="#"><img src="images/shipping truck.png" alt="배달"></a></li>
+                    <li><a href="#"><img src="images/Internet.png" alt="해외직구"></a></li>
+                </ul>
+				<p class="tip tip2">최신 작성글을 볼 수 있습니다.</p>
+				<div class="categoryName">
+					<p>최신글</p>
+					<p>묶음상품</p>
+					<p>배달</p>
+					<p>해외직구</p>
+				</div>
+            </div>
+            <div class="con2 contents">
+                <h3>최신글</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb1.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>안양 6동 파파존스 피자 나눠요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 6,000/5</p>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con3 contents">
+                <h3>쇼핑하기</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb4.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>대형 고체 카레 1+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb5.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>순면 프리미엄 화장지</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.8</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb6.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>무드등 간접조명 세트</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.7</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb7.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>오트밀 시리얼 2+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBtn">더 보기</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer11.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="tuto4" class="tutoCom">
+		<a href="#signup" class="tutoLink"></a>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#location1" data-role="button"><img src="images/header1.png" alt="위치 아이콘"/></a></li>
+				<li><a href="#main" data-role="button"><img src="images/n.png" alt="로고"/></a></li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+        </div>
+        <div data-role="content">
+			<a href="#signup"><img src="images/touch.png" alt="터치포인터" class="touch"/></a>
+            <div class="tutoBg"><a href="#signup"></a></div>
+            <div class="con2 contents">
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>스너글 섬유탈취제 2+1 1개씩 팜</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 8,000/3</p>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con3 contents">
+				<p class="tip tip1">스토어에 입점한 상품을 바로 볼 수 있습니다.</p>
+                <h3>쇼핑하기</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb4.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>대형 고체 카레 1+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb5.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>순면 프리미엄 화장지</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.8</p>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBtn">더 보기</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer11.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="signup">
+        <div data-role="header" data-position="fixed">
+            <div class="headerTitle">회원가입</div>
+        </div>
+        <div data-role="content">
+			<div class="loginBox">
+				<form action="#">
+					<p>아이디 또는 이메일</p>
+					<input type="text" name="userId" id="userId" placeholder="ID or Email"/>
+					<p>패스워드 입력</p>
+					<input type="password" name="userPWD" id="userPWD" placeholder=" Password"/>
+				</form>
+			</div>
+			<a href="#login" class="subBtn">sign up</a>
+			<a href="#login" class="social">소셜 아이디로 간편 회원가입하기</a>
+			<ul>
+				<li><a href="#login"><img src="images/sns1.png" alt="sns1"/></a></li>
+				<li><a href="#login"><img src="images/sns2.png" alt="sns2"/></a></li>
+				<li><a href="#login"><img src="images/sns3.png" alt="sns3"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="login">
+        <div data-role="header" data-position="fixed">
+            <div class="headerTitle">로그인</div>
+        </div>
+        <div data-role="content">
+			<h2>안녕하세요!</h2>
+			<h3>Login to your account</h3>
+			<div class="loginBox">
+				<form action="#">
+					<input type="text" name="userId" id="userId" placeholder="ID or Email"/>
+					<input type="password" name="userPWD" id="userPWD" placeholder=" Password"/>
+				</form>
+			</div>
+			<p class="forget">아이디나 비밀번호를 잊으셨습니까?</p>
+			<a href="#main" class="mainBtn">Login</a>
+			<a href="#;" class="goSignup">계정이 없으면 생성하여 로그인해주세요</a>
+			<p class="social">소셜 아이디로 간편 로그인하기</p>
+			<ul>
+				<li><a href="#main"><img src="images/sns1.png" alt="sns1"/></a></li>
+				<li><a href="#main"><img src="images/sns2.png" alt="sns2"/></a></li>
+				<li><a href="#main"><img src="images/sns3.png" alt="sns3"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+	<div data-role="page" id="main" class="tutoCom">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#location" data-role="button"><img src="images/header1.png" alt="위치 아이콘"/></a></li>
+				<li><a href="#main" data-role="button"><img src="images/n.png" alt="로고"/></a></li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+        </div>
+        <div data-role="content">
+            <label>
+				<input type="text" name="return" id="search" placeholder="search"/>
+			</label>
+            <div class="tag">
+                <h3>인기 태그</h3>
+                <ul>
+                    <li># 무료</li>
+                    <li># 택배나눔</li>
+                    <li># 배달</li>
+                    <li># 벼룩나눔</li>
+                </ul>
+            </div>
+			<div class="swiper mySwiper second">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide"><img src="images/slideBanner2.jpg" alt="배너이미지"/></li>
+					<li class="swiper-slide"><img src="images/slideBanner1.jpg" alt="배너이미지"/></li>
+					<li class="swiper-slide"><img src="images/slideBanner3.jpg" alt="배너이미지"/></li>
+					<li class="swiper-slide"><img src="images/slideBanner4.jpg" alt="배너이미지"/></li>
+				</ul>
+				<div class="swiper-pagination"></div>
+			</div>
+            <div class="con1 contents">
+                <h3>원하는 상품을 N/1로 나눠보세요!</h3>
+                <ul>
+                    <li><a href="#recent"><img src="images/clipboard.png" alt="최신글"></a></li>
+                    <li><a href="#set"><img src="images/gift.png" alt="묶음상품"></a></li>
+                    <li><a href="#delivery"><img src="images/shipping truck.png" alt="배달"></a></li>
+                    <li><a href="#world"><img src="images/Internet.png" alt="해외직구"></a></li>
+                </ul>
+				<div class="categoryName">
+					<p>최신글</p>
+					<p>묶음상품</p>
+					<p>배달</p>
+					<p>해외직구</p>
+				</div>
+            </div>
+            <div class="con2 contents">
+                <h3>최신글</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb1.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>안양 6동 파파존스 피자 나눠요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 6,000/5</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb2.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>나우푸드 영양제 직구 나눔해요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 6분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 54,000/4</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>스너글 섬유탈취제 2+1 1개씩 팜</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 8,000/3</p>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="con3 contents">
+                <h3>쇼핑하기</h3>
+                <ul>
+                    <li class="box">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb4.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>대형 고체 카레 1+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                    <li class="box">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb5.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>순면 프리미엄 화장지</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.8</p>
+						</div>
+                    </li>
+                    <li class="box">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb6.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>무드등 간접조명 세트</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.7</p>
+						</div>
+                    </li>
+                    <li class="box">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb7.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>오트밀 시리얼 2+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                    <li class="box more">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb7.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>오트밀 시리얼 2+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                    <li class="box more">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb7.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<h4>오트밀 시리얼 2+1</h4>
+							<p><img src="images/Star - Small.png" alt="좋아요"> 4.9</p>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBtn">더 보기</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer11.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="my">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#location" data-role="button"><img src="images/header1.png" alt="위치 아이콘"/></a></li>
+				<li class="headerTitle">내 정보</li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+		</div>
+        <div data-role="content">
+			<div class="profileWrap">
+				<div class="profileCon">
+					<p class="name">김소정</p>
+					<p class="mail">nboone1@email.com</p>
+					<div class="profile"><img src="images/profile.png" alt="프로필"/><a href="#post"><img src="images/Text.png" alt="글쓰기"/></a></div>
+					<ul>
+						<li>등급<span></span></li>
+						<li>21<p>Reviews</p></li>
+						<li>2<p>Sold</p></li>
+					</ul>
+				</div>
+			</div>
+            <div class="con3 contents">
+                <h3>작성글</h3> <div class="view"><ul>
+					<li><img src="images/Vertical - Inactive.png" alt="보기아이콘"></li>
+					<li class="toggle"><img src="images/Horizontal - Active.png" alt="보기아이콘"></li>
+				</ul></div>
+                <ul>
+                    <li class="box">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<span class="price">₩ 26,000/3</span>
+								<img src="images/thumb4.jpg" alt="글 이미지" class="thumb">
+							</div>
+							<h4>복숭아 6개 나눠요</h4>
+						</div>
+                    </li>
+                    <li class="box">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb5.jpg" alt="글 이미지" class="thumb">
+								<span class="price">₩ 10,000/5</span>
+							</div>
+							<h4>배추 한 포기씩 나눔</h4>
+						</div>
+                    </li>
+                </ul>
+            </div>
+			<a href="#post" class="mainBtn">글 작성</a>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer1.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer44.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="chatlist">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#location" data-role="button"><img src="images/header1.png" alt="위치 아이콘"/></a></li>
+				<li class="headerTitle">채팅목록</li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+		</div>
+        <div data-role="content">
+			<ul class="chatToggle">
+				<li><a href="#chat2">그룹 채팅</a></li>
+				<li class="on"><a href="#chat3">1:1 채팅</a></li>
+			</ul>
+			<ul class="chats">
+				<li>
+					<a href="#chat">
+						<div class="chatsImg">
+							<img src="images/profile2.png" alt="프로필">
+							<div class="activing"></div>
+						</div>
+						<p>이지은<br> <span>안녕하세요 배달 같이 시켜먹어요.</span></p>
+						<p class="time">10:45</p>
+					</a>
+				</li>
+				<li>
+					<a href="#chat2">
+						<div class="chatsImg">
+							<img src="images/profile3.png" alt="프로필">
+						</div>
+						<p>유정은<br> <span>안녕하세요 화장품 같이 사고 싶어요.</span></p>
+						<p class="time">07:15</p>
+					</a>
+				</li>
+				<li>
+					<a href="#chat3">
+						<div class="chatsImg">
+							<img src="images/profile4.png" alt="프로필">
+						</div>
+						<p>김은정<br> <span>해외직구 영양제 사고 싶어요.</span></p>
+						<p class="time">08:21</p>
+					</a>
+				</li>
+				<li>
+					<a href="#chat4">
+						<div class="chatsImg">
+							<img src="images/profile5.png" alt="프로필">
+						</div>
+						<p>음정수<br> <span>2+1 상품 보고 연락드립니다.</span></p>
+						<p class="time">10:10</p>
+					</a>
+				</li>
+				<li>
+					<a href="#chat5">
+						<div class="chatsImg">
+							<img src="images/profile6.png" alt="프로필">
+						</div>
+						<p>이소혜<br> <span>강아지 간식 구매하고 싶어요.</span></p>
+						<p class="time">09:24</p>
+					</a>
+				</li>
+			</ul>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer1.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer33.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+	<!-- 채팅 첫번째 -->
+	<div data-role="page" id="chat">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">이지은 님</li>
+				<li><a href="#" data-role="button" class="chatMore"><img src="images/more.png" alt="더보기 아이콘"/></a></li>
+			</ul>
+		</div>
+		<div data-role="content">
+			<div class="chatBg"></div>
+ 			<div class="chatModal">
+				<ul>
+					<li>"불편한 사항이 있으셨나요?"</li>
+					<li>알림끄기</li>
+					<li>차단하기</li>
+					<li>신고</li>
+				</ul>
+			</div>
+			<div class="chatWrap">
+				<div class="chat">
+					<div class="tabMenu">
+						<div class="tab3">
+							이지은 님이 입장하셨습니다.
+						</div>
+					</div>
+					<div class="messages">
+						<div class="messages-content"></div>
+					</div>
+				</div>
+				<div class="message-box">
+					<textarea type="text" class="message-input" placeholder="Type your Message..." ></textarea>
+					<button type="submit" name="btn1" value="전송" class="message-submit"><img src="images/paper.png" width="20" /></button>
+				</div>
+				<div class="bg"></div>
+			</div><!-- class="chatWrap" -->
+		</div>
+    </div>
+
+	<!-- 채팅 두번째 -->
+	<div data-role="page" id="chat2">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">유정은 님</li>
+				<li><a href="#" data-role="button" class="chatMore"><img src="images/more.png" alt="더보기 아이콘"/></a></li>
+			</ul>
+		</div>
+		<div data-role="content">
+			<div class="chatBg"></div>
+ 			<div class="chatModal">
+				<ul>
+					<li>"불편한 사항이 있으셨나요?"</li>
+					<li>알림끄기</li>
+					<li>차단하기</li>
+					<li>신고</li>
+				</ul>
+			</div>
+			<div class="chatWrap">
+				<div class="chat">
+					<div class="tabMenu">
+						<div class="tab3">
+							유정은 님이 입장하셨습니다.
+						</div>
+					</div>
+					<div class="messages">
+						<div class="messages-content"></div>
+					</div>
+				</div>
+				<div class="message-box">
+					<textarea type="text" class="message-input" placeholder="Type your Message..." ></textarea>
+					<button type="submit" name="btn1" value="전송" class="message-submit"><img src="images/paper.png" width="20" /></button>
+				</div>
+				<div class="bg"></div>
+			</div><!-- class="chatWrap" -->
+		</div>
+    </div>
+
+	<!-- 채팅 세번째 -->
+	<div data-role="page" id="chat3">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">김은정 님</li>
+				<li><a href="#" data-role="button" class="chatMore"><img src="images/more.png" alt="더보기 아이콘"/></a></li>
+			</ul>
+		</div>
+		<div data-role="content">
+			<div class="chatBg"></div>
+ 			<div class="chatModal">
+				<ul>
+					<li>"불편한 사항이 있으셨나요?"</li>
+					<li>알림끄기</li>
+					<li>차단하기</li>
+					<li>신고</li>
+				</ul>
+			</div>
+			<div class="chatWrap">
+				<div class="chat">
+					<div class="tabMenu">
+						<div class="tab3">
+							김은정 님이 입장하셨습니다.
+						</div>
+					</div>
+					<div class="messages">
+						<div class="messages-content"></div>
+					</div>
+				</div>
+				<div class="message-box">
+					<textarea type="text" class="message-input" placeholder="Type your Message..." ></textarea>
+					<button type="submit" name="btn1" value="전송" class="message-submit"><img src="images/paper.png" width="20" /></button>
+				</div>
+				<div class="bg"></div>
+			</div><!-- class="chatWrap" -->
+		</div>
+    </div>
+
+	<!-- 채팅 네번째 -->
+	<div data-role="page" id="chat4">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">음정수 님</li>
+				<li><a href="#" data-role="button" class="chatMore"><img src="images/more.png" alt="더보기 아이콘"/></a></li>
+			</ul>
+		</div>
+		<div data-role="content">
+			<div class="chatBg"></div>
+ 			<div class="chatModal">
+				<ul>
+					<li>"불편한 사항이 있으셨나요?"</li>
+					<li>알림끄기</li>
+					<li>차단하기</li>
+					<li>신고</li>
+				</ul>
+			</div>
+			<div class="chatWrap">
+				<div class="chat">
+					<div class="tabMenu">
+						<div class="tab3">
+							음정수 님이 입장하셨습니다.
+						</div>
+					</div>
+					<div class="messages">
+						<div class="messages-content"></div>
+					</div>
+				</div>
+				<div class="message-box">
+					<textarea type="text" class="message-input" placeholder="Type your Message..." ></textarea>
+					<button type="submit" name="btn1" value="전송" class="message-submit"><img src="images/paper.png" width="20" /></button>
+				</div>
+				<div class="bg"></div>
+			</div><!-- class="chatWrap" -->
+		</div>
+    </div>
+
+	<!-- 채팅 다섯번째 -->
+	<div data-role="page" id="chat5">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">이소혜 님</li>
+				<li><a href="#" data-role="button" class="chatMore"><img src="images/more.png" alt="더보기 아이콘"/></a></li>
+			</ul>
+		</div>
+		<div data-role="content">
+			<div class="chatBg"></div>
+ 			<div class="chatModal">
+				<ul>
+					<li>"불편한 사항이 있으셨나요?"</li>
+					<li>알림끄기</li>
+					<li>차단하기</li>
+					<li>신고</li>
+				</ul>
+			</div>
+			<div class="chatWrap">
+				<div class="chat">
+					<div class="tabMenu">
+						<div class="tab3">
+							이소혜 님이 입장하셨습니다.
+						</div>
+					</div>
+					<div class="messages">
+						<div class="messages-content"></div>
+					</div>
+				</div>
+				<div class="message-box">
+					<textarea type="text" class="message-input" placeholder="Type your Message..." ></textarea>
+					<button type="submit" name="btn1" value="전송" class="message-submit"><img src="images/paper.png" width="20" /></button>
+				</div>
+				<div class="bg"></div>
+			</div><!-- class="chatWrap" -->
+		</div>
+    </div>
+
+	<div data-role="page" id="allmenu" class="tutoCom">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">카테고리</li>
+				<li></li>
+			</ul>
+		</div>
+        <div data-role="content">
+			<div class="profileWrap">
+				<div class="profile"><img src="images/profile.png" alt="프로필"/><a href="#post"><img src="images/Text.png" alt="글쓰기"/></a></div>
+				<div class="profileCon">
+					<p class="name">김소정 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;님</p>
+					<p class="mail">nboone1@email.com</p>
+					<ul>
+						<li>등급<span></span></li>
+						<li>21<p>Reviews</p></li>
+						<li>2<p>Sold</p></li>
+					</ul>
+				</div>
+			</div>
+            <div class="con1 contents">
+                <h3>원하는 상품을 N/1로 나눠보세요!</h3>
+                <ul>
+                    <li><a href="#recent"><img src="images/clipboard.png" alt="최신글"></a></li>
+                    <li><a href="#set"><img src="images/gift.png" alt="묶음상품"></a></li>
+                    <li><a href="#delivery"><img src="images/shipping truck.png" alt="배달"></a></li>
+                    <li><a href="#world"><img src="images/Internet.png" alt="해외직구"></a></li>
+                </ul>
+				<div class="categoryName">
+					<p>최신글</p>
+					<p>묶음상품</p>
+					<p>배달</p>
+					<p>해외직구</p>
+				</div>
+            </div>
+			<div class="banner1"><img src="images/banner.jpg" alt="배너이미지"/></div>
+			<div class="banner2"><img src="images/banner2.jpg" alt="배너이미지"/></div>
+        </div>
+    </div>
+
+    <div data-role="page" id="post">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">글작성</li>
+				<li class="send"><a href="#;" data-role="button"><img src="images/post.png" alt="글작성 아이콘"/></a></li>
+			</ul>
+		</div>
+        <div data-role="content">
+			<div class="postBox">
+				<div class="profile">
+					<img src="images/profile.png" alt="프로필">
+					<p>김소정 <br> <span>green</span></p>
+					<div class="grade"></div>
+				</div>
+				<div class="postImg"><img src="images/post.jpg" alt="post 이미지"/></div>
+				<div class="postCon" data-role="fieldcontain">
+					<input id="title" type="text" maxlength="30" placeholder="제목을 입력해주세요."/>
+					<input id="price" type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" maxlength="10" placeholder="₩ 가격 /n"/>
+					<textarea cols="30" rows="10" id="text" type="text" placeholder="내용을 입력해주세요."></textarea>
+				</div>
+				<div class="postAlert postCancel">
+					<div class="postAlertCon">
+						<div class="circle"><img src="images/x.png" alt="cancel"/></div>
+						<h5>Cancel</h5>
+						<p>내용을 전부 입력해주세요.</p>
+						<div class="button">확인</div>
+					</div>
+				</div>
+				<div class="postAlert postSucess">
+					<div class="postAlertCon">
+						<div class="circle green"><img src="images/check2.png" alt="sucess"/></div>
+						<h5>Sucess</h5>
+						<p>업로드가 완료되었습니다.</p>
+						<a href="#my" class="button green">확인</a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <div data-role="page" id="pay1">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#location" data-role="button"><img src="images/header1.png" alt="위치 아이콘"/></a></li>
+				<li class="headerTitle">충전하기</li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+		</div>
+        <div data-role="content">
+			<div class="swiper-container first">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="images/card1.jpg" alt="card1"/></div>
+					<div class="swiper-slide"><img src="images/card2.jpg" alt="card2"/></div>
+					<div class="swiper-slide"><img src="images/card3.jpg" alt="card3"/></div>
+				</div>
+			</div>
+			<ul class="cardCompany">
+				<li><img src="images/paypal.png" alt="cardcompany1"/></li>
+				<li><img src="images/mastercard.png" alt="cardcompany2"/></li>
+				<li><img src="images/visa.png" alt="cardcompany3"/></li>
+				<li><img src="images/apple.png" alt="cardcompany4"/></li>
+			</ul>
+			<a href="#pay2" class="mainBtn">카드 등록</a>
+			<ul class="cardHistory">
+				<li class="show">구매이력</li>
+				<li>판매이력</li>
+			</ul>
+			<div class="historyWrap show">
+				<p class="date">Today</p>
+				<ul class="cardHistoryCon">
+					<li class="history">
+						<div class="historyProfile">
+							<img src="images/profile2.png" alt="프로필"/>
+						</div>
+						<p class="name">이지은<br><span>2022.05.12 10:00</span></p>
+						<p class="point">₩ 35,700</p>
+					</li>
+				</ul>
+				<ul class="cardHistoryCon">
+					<li class="history">
+						<div class="historyProfile">
+							<img src="images/profile3.png" alt="프로필"/>
+						</div>
+						<p class="name">유정은<br><span>2022.05.12 10:00</span></p>
+						<p class="point">₩ 50,700</p>
+					</li>
+				</ul>
+				<ul class="cardHistoryCon">
+					<li class="history">
+						<div class="historyProfile">
+							<img src="images/profile4.png" alt="프로필"/>
+						</div>
+						<p class="name">음정수<br><span>2022.05.12 10:00</span></p>
+						<p class="point">₩ 10,700</p>
+					</li>
+				</ul>
+			</div>
+			<div class="historyWrap">
+				<p class="date">Recent</p>
+				<ul class="cardHistoryCon">
+					<li class="history">
+						<div class="historyProfile">
+							<img src="images/profile5.png" alt="프로필"/>
+						</div>
+						<p class="name">김은정<br><span>2022.05.12 10:00</span></p>
+						<p class="point">₩ 57,700</p>
+					</li>
+				</ul>
+				<ul class="cardHistoryCon">
+					<li class="history">
+						<div class="historyProfile">
+							<img src="images/profile6.png" alt="프로필"/>
+						</div>
+						<p class="name">이소혜<br><span>2022.05.12 10:00</span></p>
+						<p class="point">₩ 8,300</p>
+					</li>
+				</ul>
+				<ul class="cardHistoryCon">
+					<li class="history">
+						<div class="historyProfile">
+							<img src="images/profile2.png" alt="프로필"/>
+						</div>
+						<p class="name">이지은<br><span>2022.05.12 10:00</span></p>
+						<p class="point">₩ 54,700</p>
+					</li>
+				</ul>
+			</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer1.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer22.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="pay2">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">카드등록</li>
+				<li></li>
+			</ul>
+		</div>
+        <div data-role="content">
+			<div class="selectbox">
+				<select>
+					<option selected>국민은행</option>
+					<option>신한은행</option>
+					<option>하나은행</option>
+					<option>농협은행</option>
+					<option>카카오뱅크</option>
+					<option>토스</option>
+				</select>
+			</div>
+			<ul class="cardCompany">
+				<li><img src="images/paypal.png" alt="cardcompany1"/></li>
+				<li><img src="images/mastercard.png" alt="cardcompany2"/></li>
+				<li><img src="images/visa.png" alt="cardcompany3"/></li>
+				<li><img src="images/apple.png" alt="cardcompany4"/></li>
+			</ul>
+			<form>
+				<input type="text" placeholder="김익명" id="name"/>
+				<input type="text" placeholder="1222 3443 9881 1222" id="number"/>
+				<input type="date" value="2022-05-06" id="date"/>
+				<input type="text" placeholder="cvv" id="cvv"/>
+			</form>
+			<a href="#pay1" class="mainBtn">카드 조회</a>
+        </div>
+    </div>
+
+    <div data-role="page" id="location">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">동네설정</li>
+				<li></li>
+			</ul>
+		</div>
+        <div data-role="content">
+			<div class="locaTop">
+				<div class="mark"><img src="images/loca.png" alt="위치"></div>
+				<p>경기도 안양시 만안구 안양로 303<br>안양메쎄타워 2층</p>
+				<div class="rangeBox">
+					<img src="images/loca2.png" alt="위치">
+					<p><span>2.5 Km</span> 까지 볼 수 있습니다.</p>
+				</div>
+			</div>
+			<div class="locaRangeBar">
+				<h6>동네범위</h6>
+				<div class="locaBtn">
+					<div class="plus mainBtn">+ 확대하기</div>
+					<div class="minus mainBtn">- 축소하기</div>
+				</div>
+				<div class="locaBar">
+					<div class="locaBar1"></div>
+					<div id="locaBar2"></div>
+				</div>
+				<div class="locaCircle">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<div class="locaMap">
+				<div id="map" style="width: 100%; height: 200px;"></div>
+				<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3ac2464c187c67d192979a7c252f973c"></script>
+				<!-- ej -->
+				<!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=40618cd7d1b93acedb3482fe4679e8d2"></script> -->
+				<!-- sh -->
+				<script>
+					var container = document.getElementById('map');
+					var options = {
+						center: new kakao.maps.LatLng(33.450701, 126.570667),
+						level: 3
+					};
+
+					var map = new kakao.maps.Map(container, options);
+					var relayout=setTimeout(function(){
+						map.relayout();
+						map.setCenter(new daum.maps.LatLng(37.39979, 126.92099));
+						}, 500);//리사이징
+					function panTo() {
+						var moveLatLon = new kakao.maps.LatLng(37.39979, 126.92099);
+						map.panTo(moveLatLon);
+					}
+				</script>
+				<p>내 동네 모아보기</p>
+			</div>
+			<a href="#;" class="mainBtn filterBtn">필터설정</a>
+			<a href="#;" class="currentBtn" onclick="panTo()"><div class="current"><div class="stroke"><p></p></div></div></a>
+			<div sata-role="content" id="locaModal">
+				<div class="locaBg"></div>
+				<div class="modal">
+					<p class="bar"></p>
+					<h3>필터 설정</h3>
+					<div class="content1 con">
+						<h4>지역</h4><span>더보기</span>
+						<div class="cut"></div>
+						<div class="selectbox">
+							<select>
+								<option selected>시/군/구</option>
+								<option>서울시</option>
+								<option>부산광역시</option>
+								<option>인천광역시</option>
+								<option>대구광역시</option>
+								<option>대전광역시</option>
+								<option>광주광역시</option>
+								<option>울산광역시</option>
+								<option>세종특별자치시</option>
+							</select>
+						</div>
+						<div class="selectbox">
+							<select>
+								<option selected>읍/면/동</option>
+								<option>서울시</option>
+								<option>부산광역시</option>
+								<option>인천광역시</option>
+								<option>대구광역시</option>
+								<option>대전광역시</option>
+								<option>광주광역시</option>
+								<option>울산광역시</option>
+								<option>세종특별자치시</option>
+							</select>
+						</div>
+					</div>
+					<div class="content2 con">
+						<h4>장소</h4><span>더보기</span>
+						<div class="cut"></div>
+						<div class="tag">
+							<ul>
+								<li># 학교</li>
+								<li># 카페</li>
+								<li># 식당</li>
+								<li># 회사</li>
+							</ul>
+						</div>
+					</div>
+					<a href="#;" class="mainBtn setBtn">설정하기</a>
+				</div>
+			</div>
+        </div>
+    </div>
+
+	<div data-role="page" id="recent" class="tutoCom">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li><a href="#main" data-role="button"><img src="images/n.png" alt="로고"/></a></li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+        </div>
+        <div data-role="content">
+            <label>
+				<input type="text" name="return" id="search" placeholder="search"/>
+			</label>
+			<div class="swiper mySwiper second">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide"><img src="images/slideBanner1.jpg" alt="배너이미지"/></li>
+					<li class="swiper-slide"><img src="images/slideBanner2.jpg" alt="배너이미지"/></li>
+					<li class="swiper-slide"><img src="images/slideBanner3.jpg" alt="배너이미지"/></li>
+					<li class="swiper-slide"><img src="images/slideBanner4.jpg" alt="배너이미지"/></li>
+				</ul>
+				<div class="swiper-pagination"></div>
+			</div>
+            <div class="con2 contents">
+                <h3>최신글</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb1.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>안양 6동 파파존스 피자 나눠요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 6,000/5</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb2.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>나우푸드 영양제 직구 나눔해요</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 6분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 54,000/4</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>스너글 섬유탈취제 2+1 1개씩 팜</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 8,000/3</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box more cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>스너글 섬유탈취제 2+1 1개씩 팜</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 8,000/3</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box more cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/thumb3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>스너글 섬유탈취제 2+1 1개씩 팜</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 8,000/3</p>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBtn">더 보기</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer11.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+	
+	<div data-role="page" id="set" class="tutoCom">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li><a href="#main" data-role="button"><img src="images/n.png" alt="로고"/></a></li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+        </div>
+        <div data-role="content">
+            <label>
+				<input type="text" name="return" id="search" placeholder="search"/>
+			</label>
+            <div class="tag">
+                <h3>키워드</h3>
+                <ul>
+                    <li># 1 + 1</li>
+                    <li># 2 + 1</li>
+                    <li># 3 + 1</li>
+                    <li># 그 외</li>
+                </ul>
+            </div>
+            <div class="con2 contents">
+                <h3>묶음상품</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/set1.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>라면 밀키트 1+1</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 14,000/5</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/set2.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>핸드크림 세트 2+1</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 6분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 43,000/3</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/set3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>시리얼 2+2 같이 살 사람~</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 40,000/4</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/set1.jpg" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>라면 밀키트 1+1</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 14,000/5</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box more cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/set2.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>핸드크림 세트 2+1</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 6분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 43,000/3</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box more cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/set3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>시리얼 2+2 같이 살 사람~</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 40,000/4</p>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBtn">더 보기</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer11.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+
+    <div data-role="page" id="delivery">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li class="headerTitle">택배조회</li>
+				<li></li>
+			</ul>
+		</div>
+        <div data-role="content">
+			<img src="images/delivery.png" class="main" alt="택배"/>
+			<div class="selectbox">
+				<select>
+					<option selected>대한통운</option>
+					<option>로젠택배</option>
+					<option>롯데택배</option>
+					<option>우체국택배</option>
+					<option>편의점택배</option>
+					<option>경동택배</option>
+				</select>
+			</div>
+			<form>
+				<input type="text" placeholder="김익명" id="name"/>
+				<input type="text" placeholder="1222 3443 9881 1222" id="number"/>
+				<input type="date" value="2022-05-06" id="date"/>
+			</form>
+			<a href="#pay1" class="mainBtn">택배 조회</a>
+        </div>
+    </div>
+	
+	<div data-role="page" id="world" class="tutoCom">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#" data-role="button" data-rel="back"><img src="images/back.png" alt="뒤로가기 아이콘"/></a></li>
+				<li><a href="#main" data-role="button"><img src="images/n.png" alt="로고"/></a></li>
+				<li><a href="#allmenu" data-role="button"><img src="images/header3.png" alt="전체메뉴 아이콘"/></a></li>
+			</ul>
+        </div>
+        <div data-role="content">
+            <label>
+				<input type="text" name="return" id="search" placeholder="search"/>
+			</label>
+			<div class="alert">
+				<ul>
+					<li><img src="images/alert.png" alt="느낌표"/></li>
+					<li><h5>해외직구 필수 체크</h5></li>
+				</ul>
+				<p>잠깐! 개인통관고유부호 발급방법이 궁금하시다면?<br/>신규 발급과 번호확인을 해주세요.</p>
+			</div>
+            <div class="con2 contents">
+                <h3>해외직구</h3>
+                <ul>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/world1.png" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>영양제 직구 원합니다</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 26,000/2</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/world2.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>커스텀 신발 공구</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 6분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 1,043,000/5</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/world3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>샤넬 립스틱 공구해용</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 40,000/4</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/world1.png" alt="글 이미지" class="thumb">
+								<p class="like on">
+									<img src="images/heart.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>영양제 직구 원합니다</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 1분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 26,000/2</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box more cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/world2.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>커스텀 신발 공구</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 6분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 1,043,000/5</p>
+							</div>
+						</div>
+                    </li>
+                    <li class="box more cf">
+						<div class="boxWrap">
+							<div class="thumbWrap">
+								<img src="images/world3.jpg" alt="글 이미지" class="thumb">
+								<p class="like">
+									<img src="images/heart2.png" alt="좋아요"/>
+								</p>
+							</div>
+							<div class="boxCon">
+								<h4>샤넬 립스틱 공구해용</h4>
+								<p><img src="images/Star - Small.png" alt="좋아요"> 15분 전</p>
+								<p><img src="images/Group.png" alt="위치"> 안양 6동, 솔잎 아파트</p>
+								<p class="price">₩ 40,000/4</p>
+							</div>
+						</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="subBtn">더 보기</div>
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+			<ul>
+				<li><a href="#main" data-role="button"><img src="images/footer11.png" alt="홈 아이콘"/></a></li>
+				<li><a href="#pay1" data-role="button"><img src="images/footer2.png" alt="충전 아이콘"/></a></li>
+				<li><a href="#chatlist" data-role="button"><img src="images/footer3.png" alt="채팅 아이콘"/></a></li>
+				<li><a href="#my" data-role="button"><img src="images/footer4.png" alt="내정보 아이콘"/></a></li>
+			</ul>
+        </div>
+    </div>
+	
+</body>
+</html>
+
+
+
+
+
+
+

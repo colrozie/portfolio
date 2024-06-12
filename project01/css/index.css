@@ -1,0 +1,142 @@
+﻿/* mainTopContent */
+#mainTopContent{width: 100%; height: 462px; margin-bottom: 13px; padding-top: 80px;}
+#mainTopContent .slideBanner{width: 100%; height: 386px; margin: 0 auto; position: relative; background: #00c471; line-height: 2; z-index: -999;}
+#mainTopContent .slideBanner ul{width: 1420px; margin: 0 auto;}
+#mainTopContent .slideBanner .slideLeft{width: 530px; padding: 101px 80px;;}
+#mainTopContent .slideBanner .slideLeft span{padding: 4px 10px; background: #00dfff; color: #ffffff; border-radius: 5px; font-size: 20px;}
+#mainTopContent .slideBanner .slideLeft h3{font-size: 37px; color: #ffffff; color: #ffffff;}
+#mainTopContent .slideBanner .slideLeft p{color: #ffffff; font-size: 17px;}
+#mainTopContent .slideBanner .slideRight{width: 730px; height: 386px; line-height: 43;}
+#mainTopContent .slideBannerBot{font-size: 20px; color: #ffffff; padding: 13px 0; border-bottom: 1px solid #dee2e6;}
+#mainTopContent .slideBannerBot .slideBannerWrap{width: 1420px; margin: 0 auto;}
+#mainTopContent .slideBannerBot button{background: none; color: #ffffff; font-size: 18px; float: right;}
+#mainTopContent .slideBannerBot .controllerBtn{width: 163px; height: 50px; background: #3f3f3f; border-radius: 30px;}
+#mainTopContent .slideBannerBot .controllerBtn .controllerLeft{margin-left: 20px; line-height: 47px; letter-spacing: 3px;}
+#mainTopContent .slideBannerBot .controllerBtn .controllerRight{margin-right: 10px;}
+#mainTopContent .slideBannerBot .controllerBtn .controllerRight button{line-height: 55px; margin-right: 5px; cursor: pointer;}
+#mainTopContent .slideBannerBot .divider{width: 1px; height: 50px; background-color: #dee2e6; margin: 0 19px 0;}
+#mainTopContent .slideBannerBot .swiperWrap{width: 1218px; overflow: hidden; white-space: nowrap;}
+#mainTopContent .slideBannerBot .swiperWrap ul li{float: left; text-align: center; padding: 10.5px; background: #ffffff; border-radius: 30px; margin-right: 19px; border: 2px solid #dee2e6;}
+#mainTopContent .slideBannerBot .swiperWrap ul li a{font-size: 18px; color: #4a4a4a; font-weight: bold;}
+#mainTopContent .slideBannerBot .openBtn{color: #4a4a4a; width: 50px; height: 50px; border-radius: 50px; border: 2px solid #dee2e6; background: #ffffff; cursor: pointer;}
+#mainTopContent .slideBannerBot .openBtn img{vertical-align: middle;}
+
+/* mainSearch */
+#mainSearch{padding: 43px 0; text-align: center; margin-bottom: 18px;}
+#mainSearch > h2{font-size: 26px; color: #000a12;}
+#mainSearch input{width: 675px; height: 42px; margin-top: 25px; border-radius: 40px; background: rgba(29,192,120,.12); padding: 10px 10px 10px 15px; font-size: 18px; border: 1px solid #c7eedd; color: #000a12;}
+#mainSearch ul{width: 675px; margin: 0 auto;}
+#mainSearch ul li{float: left; margin: 10px 10px 0 10px;}
+#mainSearch ul li a{padding: 8px 12px; background: #f1f3f5; color: #757575; border-radius: 20px;}
+
+/* common */
+.pink{background: #f6d5ea;}
+.blue{background: #c5e3f9;}
+.pink2{background: #ffc8c7;}
+h2.titleText a{color: #1e1e1e; font-size: 28px; letter-spacing: -1.5px; margin-bottom: 10px;}
+h2.titleText span{font-size: 15px; white-space: pre; letter-spacing: 0; color: #ff0000;}
+.subText{font-size: 18px; letter-spacing: -1.5px; margin-bottom: 28px; color: #757575;}
+.name{letter-spacing: 1px; margin-bottom: 3px; color: #848484; padding-left: 6px;}
+.grade{margin-bottom: 8px; padding-left: 6px;}
+.grade i{background: url(../images/graderStar.png) repeat-x 0 center; width: 140px; height: 20px; vertical-align: bottom; display: inline-block;}
+.grade span{font-size: 12px; line-height: 20px;}
+.price{font-size: 20px; letter-spacing: 0.5px; color: #003ab1; margin-bottom: 20px; font-weight: bold; padding-left: 6px;}
+.price span{text-decoration: line-through; font-size: 16px; color: #838383; margin-right: 6px;}
+.tag span{font-size: 14px; padding: 6px 14px; margin-right: 8px; border-radius: 5px;}
+.tag{padding-left: 6px;}
+
+/* welcomeRoot */
+#welcomeRoot{width: 1420px; margin: 0 auto 80px;}
+#welcomeRoot .welcomeWrap > div > div{width: 280px; background: #ffffff; margin-right: 5px;}
+#welcomeRoot .welcomeWrap > div > div> img{display: block; margin-bottom: 14px;}
+#welcomeRoot .welcomeWrap div h3{line-height: 1.4; color: #353535; margin-bottom: 3px; text-align: justify; height: 52.4px; letter-spacing: -0.9px; padding: 6px 6px 0 6px;}
+#welcomeRoot .welcomeWrap > div > div.last{margin-right: 0;}
+
+/* roadmapRoot */
+#roadmapRoot{width: 1420px; margin: 0 auto 82px;}
+#roadmapRoot .roadmapWrap > div > div{width: 351.25px; margin-right: 5px;}
+#roadmapRoot .roadmapWrap > div h3{padding: 20px; letter-spacing: -1px; color: #353535;}
+#roadmapRoot .roadmapWrap > div > div.last{margin-right: 0;}
+
+/* readRoot */
+#readRoot{width: 1420px; margin: 0 auto 80px;}
+#readRoot .readWrap > div{width: 460px; margin: 19px 20px 0 0;}
+#readRoot .readWrap > div h3{padding: 20px 20px 6px 6px; letter-spacing: -1px; color: #353535; text-align: left; font-size: 26px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+#readRoot .readWrap > div p{font-size: 20px; color: #5b5b5b; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; padding: 0 6px;}
+#readRoot .readWrap > div img{border-radius: 5px; box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);}
+#readRoot .readWrap > div.last{margin-right: 0;}
+
+/* recentRoot */
+#recentRoot{width: 1420px; margin: 0 auto 80px;}
+#recentRoot .recentWrap > div > div{width: 280px; background: #ffffff; margin: 19px 5px 0 0;}
+#recentRoot .recentWrap > div > div> img{display: block; margin-bottom: 14px;}
+#recentRoot .recentWrap div h3{line-height: 1.4; color: #353535; margin-bottom: 3px; height: 52.4px; letter-spacing: -0.9px; padding: 6px 6px 0;}
+#recentRoot .recentWrap > div > div.last{margin-right: 0;}
+
+/* reviewRoot */
+#reviewRoot{width: 1420px; margin: 0 auto 82px; height: 570px; overflow: hidden;}
+#reviewRoot .reviewLeft h2{font-size: 42px; letter-spacing: -2px; margin: 50px 0 28px 0;}
+#reviewRoot .reviewLeft h2 span{font-size: 42px; color: #41c67c; letter-spacing: 1px;}
+#reviewRoot .reviewLeft p{font-size: 20px; line-height: 1.4; letter-spacing: -2.2px; margin-bottom: 44px;}
+#reviewRoot .reviewLeft li{float: left;}
+#reviewRoot .reviewLeft li a{padding: 8px 22px; border: 1px solid #41c67c; color: #212121; margin-right: 10px; font-size: 20px; letter-spacing: -2px; border-radius: 4px;}
+#reviewRoot .reviewRight li a{width: 660px; padding: 20px; background: #f9f9f9; border: 1px solid #dcdddd; box-shadow: 0 2px 3px rgb(0 10 18 / 10%), 0 0 0 1px rgb(0 10 18 / 10%); border-radius: 5px; margin-bottom: 20px;}
+#reviewRoot .reviewRight li a .info{margin-bottom: 20px;}
+#reviewRoot .reviewRight li a .name{color: #757570; font-size: 20px; margin-right: 10px;}
+#reviewRoot .reviewRight li a .time{color: #979797; font-size: 20px; font-size: 19px;}
+#reviewRoot .reviewRight li a .title{color: #373737; font-size: 23px; margin-bottom: 7px; font-weight: bold; letter-spacing: -1px;}
+#reviewRoot .reviewRight li a .con{color: #393939; font-size: 21px; text-align: justify;}
+
+/* weather */
+#weather{width: 100%; margin-bottom: 80px;}
+#weather h2{color: #1e1e1e; font-size: 28px; letter-spacing: -1.5px; width: 1420px; margin: 0 auto 30px;}
+.weatherWrap{width: 100%; background: #f9f9f9;}
+.weatherWrap .weatherPic{margin: 0 auto; width: 1420px;}
+
+/* workGroup */
+#workGroup{width: 1420px; height: 110px; margin: 0 auto 80px;}
+#workGroup h2{text-align: center; letter-spacing: -2px; margin-bottom: 20px;}
+#workGroup ul li{float: left; margin-right: 16px;}
+#workGroup ul li.first{padding-left: 64px;}
+#workGroup ul li.last{margin-right: 0;}
+
+/* apply */
+#apply{width: 100%; background: #f9f9f9; padding: 68px 0;}
+#apply .applyWrap{width: 1420px; margin: 0 auto;}
+#apply .applyWrap h3{font-size: 28px; letter-spacing: -1.5px; margin-bottom: 9px; color: #1e1e1e;}
+#apply .applyWrap p{font-size: 18px; letter-spacing: -1.3px; color: #757586; margin-bottom: 29px;}
+#apply .applyWrap .card{width: 340px; height: 278px; margin-right: 20px;  background: #ffffff; padding: 60px; border-radius: 5px; box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);}
+#apply .applyWrap .card p.title{font-size: 22px; letter-spacing: -2px; color: #363636; font-weight: bold; margin-bottom: 8px;}
+#apply .applyWrap .card p.con{color: #757575; font-size: 17px; letter-spacing: 0; line-height: 1.6; height: 171px;}
+#apply .applyWrap .card .button a{padding: 10px 15px; background: #1dc078; color: #ffffff; font-weight: bold; font-size: 20px; border-radius: 30px; display: inline;}
+#apply .applyWrap .last{margin-right: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

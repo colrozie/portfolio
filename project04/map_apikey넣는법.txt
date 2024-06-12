@@ -1,0 +1,18 @@
+<!-- 사용자인증정보에서 API Key를 얻어낸다.-->
+
+AIzaSyA5XAx7bkqM1DjCujQgkCkvR7SMO4EVOtw
+AIzaSyCm1Hy7dRLQ30hPGW68qy423GkNMjLKFQM
+
+<script src="js/DB_springMove_fn.js"></script>	
+<!-- 아래에 원래 있던 소스에 키만 더해주면 됩니다. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCm1Hy7dRLQ30hPGW68qy423GkNMjLKFQM&callback=initMap"></script>
+<!-- 아래 파일을 열어서 위도 경도 정보를 넣는다.-->
+<script src="js/map.js"></script>
+
+
+
+
+
+https://developers.google.com/maps/documentation/javascript/
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+url 주소등록 : *hschool.co.kr/*

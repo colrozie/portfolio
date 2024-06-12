@@ -1,0 +1,92 @@
+﻿/* mainHeader */
+#mainHeader{width: 100%; padding: 100px 0 20px; background-color: #333b3d;}
+#mainHeader h2, #mainHeader p{width: 1420px; margin: 0 auto; color: #ffffff; padding: 5px 0; font-weight: bold;}
+
+/* mainSection 크기 지정 */
+#section{width: 1420px; margin: 0 auto;}
+
+/* asideL */
+#asideL{width: 200px;}
+#asideL{letter-spacing: -1px;}
+#asideL p{color: #adb5bd; margin: 20px 0; font-size: 12px; font-weight: bold;}
+#asideL ul{margin: 0 auto;}
+#asideL ul li{margin: 20px 0;}
+#asideL ul li a{text-decoration: none; color: #343a40; margin-left: 10px;}
+#asideL ul li a:hover{color: #dee2e6;}
+#asideL ul li.active a{color: #00c471; cursor: default;}
+
+/* asideR */
+#asideR{width: 300px;}
+#asideR ul{padding: 16px 8px 16px 12px; border: 1px solid #dee2e6; margin-top: 35px; width: 174px; border-radius: 5px;}
+#asideR .title{color: #9797a6; margin-bottom: 16px; height: 20px;font-size: 14px; letter-spacing: -1px;}
+#asideR ul a{display: block; float: left; background-color: #eff3fa; color: #646473; border-radius: 5px; margin: 0 4px 10px 0; font-size: 13px; padding: 8px 4px; letter-spacing: -0.3px;}
+
+/* commWrap nav 탭 */
+#commWrap{width: 920px; margin-top: 32px;}
+#commWrap nav{height: 50px; line-height: 50px; border-bottom: 1px solid #dee2e6; margin-bottom: 35px; font-weight: bold;}
+#commWrap nav ul li{float: left;}
+#commWrap nav ul li a{display: block; padding: 0 16px; text-align: center; color: #dee2e6;}
+#commWrap nav ul li a:hover{color: #3e4042; border-bottom: 2px solid #3e4042; height: 49px;}
+#commWrap nav ul li.active a{color: #3e4042; border-bottom: 2px solid #3e4042; cursor: default; height: 49px;}
+
+/* searchWrap 게시판 검색*/
+#searchWrap{margin-bottom: 50px;}
+#searchWrap input{width: 80%; border: 1px solid #dee2e6; padding: 20px 20px 20px 40px; border-radius: 5px; margin-bottom: 20px; vertical-align: middle; font-size: 16px; color: #1b1c1d;}
+#searchWrap button{width: 100px; height: 60px; background-color: #00c471; color: #ffffff; border-radius: 5px; vertical-align: middle; font-size: 16px; font-weight: bold;}
+#searchWrap button[type="reset"]{background-color: #ffffff; color: #333b3d; background: url(../images/ik9.png) 20px no-repeat; padding-right: 10px; text-align: right; font-size: 16px;}
+#searchWrap button:hover{cursor: pointer;}
+#searchWrap input:focus{outline: 1px solid #00c471; border: 1px solid #00c471;}
+#searchWrap input[name="searchBar"]{background: url(../images/ik11.png) no-repeat 15px center;}
+#searchWrap input[name="tagBar"]{background: url(../images/ik12.png) no-repeat 15px center;}
+
+/* boardHeader 게시판 네비*/
+#board .boardHeader{height: 50px; border-bottom: 1px solid #dee2e6; color: #dee2e6; line-height: 50px;}
+#board .boardHeader ul{vertical-align: middle;}
+#board .boardHeader button{width: 100px; height: 50px; background-color: #3e4042; color: #ffffff; border-radius: 5px; margin: -15px 0; font-size: 14px; font-weight: bold; line-height: 50px;}
+#board .boardHeader ul li a{display: block;  padding: 0 16px; color: #abb0b5; font-size: 14px; font-weight: bold;}
+#board .boardHeader ul li a:hover{color: #1b1c1d; border-bottom: 2px solid #1b1c1d; height: 49px;}
+#board .boardHeader ul li a:hover{color: #1b1c1d; border-bottom: 2px solid #1b1c1d; height: 49px;}
+#board .boardHeader ul li.active a{color: #1b1c1d; border-bottom: 2px solid #1b1c1d; cursor: default; height: 49px;}
+#board .boardHeader button:hover{cursor: pointer;}
+
+/* questionWrap 게시판 세부*/
+#board .questionWrap{height: auto; padding: 30px; border-bottom: 1px solid #dee2e6;}
+#board .questionInfo{width: 730px; padding-right: 30px;}
+#board .questionTitle, #board .questionContent{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#board .questionTitle{margin-bottom: 20px; color: #1b1c1d; font-size: 18px; font-weight: bold;}
+#board .questionContent{margin-bottom: 20px; color: #616568; font-size: 15px;}
+#board .questionTag{font-size: 14px; color: #858a8d;}
+#board .questionWrap:hover{background-color: #f3f4f7; cursor: pointer;}
+#board .questionComment{width: 100px; text-align: center;}
+#board .commentBtn{height: 71px; background: url(../images/circle.png) no-repeat center;}
+#board .commentBtn div{width: 100px; margin: 0 auto; color: #1b1c1d;}
+#board .commentCount{font-size: 18px; color: #1b1c1d; padding: 14px 0 5px;}
+#board .commentAnswer{font-size: 12px; color: #616568;}
+#board .commentLike{height: 30px; line-height: 30px; font-size: 14px; color: #495057;}
+#board .commentLike i{background: url(../images/heart.png) no-repeat; width: 13px; height: 13px; display: inline-block;}
+
+/* page 페이지 번호*/
+#page{position: relative; margin: 55px 0 70px;}
+.pageNumber{position: relative; float: left; left: 50%;}
+.pageNumber div{position: relative; float: left; left: -50%; padding: 5px 10px; margin: 0 10px; cursor: pointer; border: 1px solid #dee2e6; border-radius: 5px; color: #363636; font-size: 12px;}
+#page .prev{position: absolute; left: 0; top: 0;}
+#page .next{position: absolute; right: 0; top: 0;}
+#page button{background-color: #ffffff; font-size: 16px; color: #363636; font-size: 12px; padding: 5px 10px; border-radius: 5px; color: #363636; font-size: 12px; border: 1px solid #dee2e6;}
+.pageNumber div:hover{border: 1px solid #616568;}
+#page button:hover{cursor: pointer; border: 1px solid #616568;}
+#page .active{cursor: default; background-color: #00c471; color: #ffffff;}
+#page .active:hover{border: 1px solid #dee2e6;}
+
+/* applySection */
+#apply{width: 100%; background: #f9f9f9; padding: 68px 0;}
+#apply .applyWrap{width: 1420px; margin: 0 auto;}
+#apply .applyWrap .card{margin: 0 177px;}
+#apply .applyWrap .card p.title{font-size: 22px; letter-spacing: -2px; color: #363636; font-weight: bold; text-align: center;}
+#apply .applyWrap .card p.con{color: #757575; font-size: 17px; letter-spacing: 0; line-height: 1.6; margin: 16px 0; text-align: center;}
+#apply .applyWrap .card p.button{margin: 0 auto; width: 150px;}
+#apply .applyWrap .fr p.button{margin: 0 auto; width: 178px;}
+#apply .applyWrap .card p.button a{padding: 10px 15px; background: #1dc078; color: #ffffff; font-weight: bold; font-size: 20px; border-radius: 5px;}
+
+
+
+

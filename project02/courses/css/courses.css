@@ -1,0 +1,77 @@
+﻿/* layout */
+#mainSection{width: 1420px; margin: 0 auto;}
+#section{padding-top: 110px;}
+
+/* asideL */
+#asideL{width: 300px; height: 100%; padding-bottom: 30px;}
+	#asideL>ul>li>a{font-size: 19px; font-weight: bold; color: #595959; text-align: left; width: 220px; height: 59px; line-height: 59px; padding-left: 19px; background: #fafafa; border: 1px solid #e4e4e4;}
+	#asideL>ul>li>a>img{float: right; padding: 23px 8px 0 0;}
+	.sub{display: none;}
+	.sub a{font-size: 16px; color: #595959; text-align: left; width: 220px; height: 44px; line-height: 44px; padding-left: 19px; background: #ffffff; border: 1px solid #e4e4e4;}
+	.sub a:hover{background: #f5f5f5;}
+	
+/* coursesWrap */
+#coursesWrap{width: 1120px;}
+	#coursesHeader{width: 100%; height:75px;}
+	#coursesHeader .searchArea{width: 410px; height: 50px;}
+	#coursesHeader{border-bottom: 1px solid #dedede; margin-bottom: 12px;}
+	#coursesHeader form input[type="text"]{width: 330px; height: 50px; border: 1px solid #dedede; padding-left: 10px; vertical-align: middle;}
+	#coursesHeader form input[type="text"]:focus{outline: 1px solid #1dc078; border-radius: 4px;}
+	#coursesHeader form input[type="button"]{width: 60px; height: 52px; background: #1dc078; color: #ffffff; padding: 10px 10px; font-size: 16px; font-weight: bold; cursor: pointer; margin-left: -5px; vertical-align: middle;}
+	
+	#couresesMain .tagSkills{width: 1120px; height: 170px;}
+	#couresesMain .tagSkills h2{font-size: 22px; color: #454545; text-indent: -1px; margin-bottom: 14px;}
+	#couresesMain .tagSkills form input[type="text"]{background: #f6f6f6; width: 157px; height: 35px; border: 1px solid #dedede; padding-left: 10px; border-radius: 4px 0 0 4px;}
+	#couresesMain .tagSkills form input[type="text"]:hover{border: 1px solid #999999;}
+	#couresesMain .tagSkills form input[type="text"]:focus{outline: 1px solid #1dc078;}
+	#couresesMain .tagSkills form input[type="button"]{width: 35px; height: 37px; background: #1dc078; color: #ffffff; font-weight: bold; cursor: pointer; border-radius: 0 4px 4px 0; line-height: 37px; margin-left: -5px;}
+	#couresesMain .tagSkills ul li{float: left;}
+	#couresesMain .tagSkills ul li a{padding: 7px 13px; background: #b8b8b8; color: #ffffff; font-weight: bold; margin-left: 14px; border-radius: 5px; font-size: 18px;}
+	#couresesMain .tagSkills .skillBtn1{margin-bottom: 10px;}
+	#couresesMain .tagSkills .skillBtn2 .blue{background: #3298dc;}
+	#couresesMain .tagSkills .skillBtn2 .mNone{margin-left: 0;}
+
+	#couresesMain .searchFilter{width: 1120px; height: 80px;}
+	#couresesMain .searchFilter ul{width: 420px; height: 47px; border: 1px solid #bbbbbb; border-radius: 5px;}
+	#couresesMain .searchFilter ul li{float: left; margin-left: 6.5px;}
+	#couresesMain .searchFilter ul li img{margin-left: 12px; vertical-align: middle;}
+	#couresesMain .searchFilter ul li a{text-align: center; font-size: 16px; font-weight: bold; color: #abb0b5; line-height: 47px;}
+	#couresesMain .searchFilter ul li a.filter{color: #3e4042;}
+	
+	/* common */
+	.mainContent .content{width: 250px; height: 370px; margin: 0 40px 40px 0; cursor: pointer;}
+	.mainContent .content:hover img{transform: scale(1.1); transition: all .60s; box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);}
+	.mainContent .content figure{width: 250px; overflow: hidden;}
+	.mainContent .content img{display: block; margin-bottom: 14px;}
+	.mainContent .content h3{line-height: 1.4; color: #353535; margin-bottom: 3px; /* text-align: justify; */ height: 52.4px; letter-spacing: -0.9px; padding: 0 6px;}
+	.pink{background: #f6d5ea;}
+	.blue{background: #c5e3f9;}
+	.pink2{background: #ffc8c7;}
+	.mint{background: #bee7fe;}
+	h2.titleText a{color: #1e1e1e; font-size: 28px; letter-spacing: -1.5px; margin-bottom: 10px;}
+	h2.titleText span{font-size: 15px; white-space: pre; letter-spacing: 0; color: #ff0000;}
+	.subText{font-size: 18px; letter-spacing: -1.5px; margin-bottom: 28px; color: #757575;}
+	.name{letter-spacing: 1px; margin-bottom: 3px; color: #848484; padding-left: 6px;}
+	.grade{margin-bottom: 8px; padding-left: 6px;}
+	.grade i{background: url(../images/graderStar.png) repeat-x 0 center; width: 140px; height: 20px; vertical-align: bottom; display: inline-block;}
+	.grade span{font-size: 12px; line-height: 20px;}
+	.price{font-size: 20px; letter-spacing: 0.5px; color: #003ab1; margin-bottom: 20px; font-weight: bold; padding-left: 6px;}
+	.price span{text-decoration: line-through; font-size: 16px; color: #838383; margin-right: 6px;}
+	.tag span{font-size: 14px; padding: 6px 14px; margin-right: 8px; border-radius: 5px;}
+	.tag{padding-left: 6px;}
+	.mainContent .last{margin-right: 0;}
+	
+/* page 페이지 번호*/
+#page{position: relative; margin: 55px 0 70px;}
+.pageNumber{position: relative; float: left; left: 50%;}
+.pageNumber div{position: relative; float: left; left: -50%; padding: 5px 10px; margin: 0 10px; cursor: pointer; border: 1px solid #dee2e6; border-radius: 5px; color: #363636; font-size: 12px;}
+#page .prev{position: absolute; left: 0; top: 0;}
+#page .next{position: absolute; right: 0; top: 0;}
+#page button{background-color: #ffffff; font-size: 16px; color: #363636; font-size: 12px; padding: 5px 10px; border-radius: 5px; color: #363636; font-size: 12px; border: 1px solid #dee2e6;}
+.pageNumber div:hover{border: 1px solid #616568;}
+#page button:hover{cursor: pointer; border: 1px solid #616568;}
+#page .active{cursor: default; background-color: #00c471; color: #ffffff;}
+#page .active:hover{border: 1px solid #dee2e6;}
+
+
+

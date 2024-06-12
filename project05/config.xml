@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns="http://www.w3.org/ns/widgets" id="io.cordova.hellocordova" version="1.0.0">
+    <name>N분의1</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <platform name="android">
+        <!--
+            ldpi    : 36x36 px
+            mdpi    : 48x48 px
+            hdpi    : 72x72 px
+            xhdpi   : 96x96 px
+            xxhdpi  : 144x144 px
+            xxxhdpi : 192x192 px
+        -->
+        <icon src="res/android/ldpi.png" density="ldpi" />
+        <icon src="res/android/mdpi.png" density="mdpi" />
+        <icon src="res/android/hdpi.png" density="hdpi" />
+        <icon src="res/android/xhdpi.png" density="xhdpi" />
+        <icon src="res/android/xxhdpi.png" density="xxhdpi" />
+        <icon src="res/android/xxxhdpi.png" density="xxxhdpi" />
+
+    </platform>
+	<platform name="android">
+		<!-- you can use any density that exists in the Android project -->
+		<!-- port기준 land는 반대로
+            ldpi    : 200x320 px
+            mdpi    : 320x480 px
+            hdpi    : 480x800 px
+            xhdpi   : 720x1280 px
+            xxhdpi  : 960x1600 px
+            xxxhdpi : 1280x1920 px
+        -->
+		<splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
+		<splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi"/>
+		<splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
+		<splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>
+		<splash src="res/screen/android/splash-land-xxhdpi.png" density="land-xxhdpi"/>
+		<splash src="res/screen/android/splash-land-xxxhdpi.png" density="land-xxxhdpi"/>
+
+		<splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
+		<splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
+		<splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
+		<splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
+		<splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi"/>
+		<splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi"/>
+	</platform>
+	<preference name="loglevel" value="DEBUG"/>
+	<preference name="SplashScreen" value="screen"/>
+    <preference name="SplashScreenDelay" value="2000"/>
+</widget>

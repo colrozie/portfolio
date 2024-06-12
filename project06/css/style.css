@@ -1,0 +1,293 @@
+:root{
+	--anti: rotate(0.04deg);
+}
+
+#header{display: flex; width: 100%; height: 104px; background: rgba(255,255,255,1); z-index: 2; transition: all 0.5s; box-sizing: border-box; padding: 24px 48px; align-items: center;}
+h1{transition: all 0.5s;}
+h1 img{width: 40px; transition: all 0.5s;}
+#gnb{display: flex; width: 82%; margin-left: auto; justify-content: space-between;}
+#gnb li{line-height: 2.2; box-sizing: border-box; padding: 8px 15px;}
+#gnb li.sign{color: #ffffff; background: black; box-sizing: border-box; padding: 8px 15px; border-radius: 12px; font-weight: 700;}
+#gnb li a{font-size: 1.2rem; font-family: 'Raleway', sans-serif; font-weight: 600;}
+#gnb li a i{font-size: 0.85rem; padding-left: 5px;}
+
+.btnMenu{display: none; transition: all 0.5s;}
+.btnMenu img{transition: all 0.5s;}
+
+#visualWrap{position: relative; width: 100%; height: 600px; transition: all 0.5s;}
+.visual{width: 1440px; height: 600px; margin: 0 auto; position: relative;}
+.visual > *{text-align: center;}
+.txtBox{position: absolute; left: 50%; top: 40%; transform: translate(-50%, -50%); line-height: 1.2; transition: all 0.5s;}
+.txtBox h2{text-align: center; font-size: 5rem;}
+.visual img{position: absolute; top: 0;}
+.visual img.hex{right: 20%; top: 30%;}
+.visual p{font-family: 'Raleway', sans-serif; position: relative; top: 60%; font-size: 1.3rem; font-weight: 500;}
+.visual a{display: block; color: #ffffff; background: black; box-sizing: border-box; padding: 8px 15px; border-radius: 12px; font-size: 1.3rem; font-weight: 700; width: 230px; margin: 0 auto; position: relative; top: 66%;}
+
+#con1{width: 1440px; margin: 0 auto; margin-top: 5px; overflow: hidden; display: flex; flex-wrap: wrap; justify-content: space-evenly;}
+#con1>div{box-sizing: border-box; padding: 5px; transition: all 0.5s; overflow: hidden;}
+#con1>div>div img{height: 100%; object-fit: cover;}
+#con1>div>div{width: 100%; height: 100%; box-sizing: border-box; border-radius: 17px; position: relative; overflow: hidden; transition: all 0.5s;}
+.conBanner1{width: 290px; height: 190px;}
+	.conBanner1>div{background: #7B61FF;}
+.conBanner2{width: 290px; height: 190px; margin-top: 50px;}
+	.conBanner2>div{background: #1BC47D;}
+.conBanner3{width: 290px; height: 190px; margin-top: 100px;}
+	.conBanner3>div{background: #FFEB00;}
+
+.rank{width: 560px; height: 430px;}
+	.rank>div{background: url(../images/Component.png) no-repeat right center; border: none !important; box-sizing: border-box; padding: 15px; }
+	.rank h2{font-size: 1.2rem; margin-bottom: 10px;}
+	.rank li{font-family: 'Raleway', sans-serif; width: 350px; font-size: 16px; display: flex; justify-content: space-between; font-weight: 500; margin-bottom: 2rem; cursor: pointer; border-radius: 20px; transition: all 0.3s;}
+	.rank li:hover{background: rgb(219, 234, 255,0.5); transform: scale(1.1);}
+	.rank li p{width: 50px; height: 50px; border-radius: 15px; background: white; box-shadow: 0 0 6px #d8d8d8a1; text-align: center;}
+	.rank li p i{line-height: 50px; font-size: 1.3rem;}
+	.rank li h5{align-self: center; margin-right: 160px;}
+
+.sns{width: 250px; height: 280px;}
+	.sns h2{width: 100%; font-size: 1.3rem;}
+	.sns h2 span{color: #b8b8b8;}
+	.sns ul{width: 100%; box-sizing: border-box; margin-top: 20px;}
+	.sns ul li{display: flex; justify-content: space-between;}
+	.sns ul li:hover a{color: #00B5CE;}
+	.sns ul a{display: block; font-size: 1.1rem; height: 45px; line-height: 45px; text-align: right;}
+
+.awards{width: 80%; height: 400px;}
+.awards ul{display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; height: 100%;}
+.awards ul li{flex-basis: 24%; height: 90%; text-align: center; overflow: hidden; border-radius: 20px;}
+.awards ul li:hover{box-shadow: 0 0 15px #eeeeee; transform: scale(1.1); transition: all 0.3s; cursor: pointer;}
+.awards ul li img{border-radius: 20px; width: 100%; box-shadow: 0px 0px 10px #cccccc;}
+.awards ul li > div, .awards ul li > p{text-align: left; padding-left: 10%;}
+.awards ul li > div{font-family: 'Raleway', sans-serif; font-weight: 600; font-size: 0.89rem;}
+.awards ul li > div i{padding-right: 5px;}
+.awards ul li div.like i{color: #ff5c5c;}
+.awards ul li div.down i{color: #6a9af9;}
+.awards ul li > p{font-size: 1.2rem;}
+
+#designers{width: 100%; background: #cfe2ff;}
+	#designers .designWrap{width: 1440px; margin: 0 auto; box-sizing: border-box; padding: 50px 0 150px; }
+	.designWrap h2{margin-bottom: 2rem; font-size: 2.3rem; line-height: 1.1;}
+	.designWrap .contents{display: flex; width: 100%; justify-content: space-between;}
+	.designWrap .contents > div{height: 500px;}
+	.designWrap .contents > .conL{width: 38%; height: 500px; position: relative;}
+	.designWrap .contents > .conL ul li{width: 100%; margin: 0 auto; background: #ffc700; box-sizing: border-box; margin-bottom: 2rem; padding: 20px; position: relative; border: 3px solid #000000;}
+	.designWrap .contents > .conL ul li p{font-size: 1.42rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+	.designWrap .contents > .conL ul li:hover{transition: all 0.2s; background: #c7b9ff;
+	box-shadow: 7px 7px 0px #0fa958,
+	 10px 10px 0px black,
+	 17px 17px 0px #ffc700,
+	 20px 20px 0px black;
+	}
+	.designWrap .contents > .conL ul li.hoverL{transition: all 0.2s; background: #c7b9ff;
+	box-shadow: 7px 7px 0px #0fa958,
+	 10px 10px 0px black,
+	 17px 17px 0px #ffc700,
+	 20px 20px 0px black;
+	}
+
+	.designWrap .contents > .conR{border-radius: 20px; width: 45%; box-sizing: border-box; overflow: hidden; border: 5px solid #121212;}
+	.designWrap .contents > .conR ul li{height: 492px; display: none;}
+	.designWrap .contents > .textFlow p{display: none;}
+	.designWrap .contents > .conR ul li img{width: 100%; object-fit: cover;}
+	.designWrap .contents ul li.db{display: block;}
+	.designWrap .contents .textFlow p.db{display: block;}
+
+#banner{width: 100%; border-top: 2px solid #080808; border-bottom: 2px solid #080808; margin: 0 auto; box-sizing: border-box; padding: 20px 0; display: flex; align-items: center; flex-wrap: nowrap; justify-content: space-evenly; margin-bottom: 15px; background: #FFB800; overflow: hidden;}
+#banner p{font-size: 1.6rem; background: white; border-radius: 50px; box-sizing: border-box; padding: 3px 30px; border: 2px solid black; margin: 0 10px;}
+#banner p:hover{background: #ffaa90;}
+.marquee p {
+  margin:0;
+  padding-left:20px;
+  display:inline-block;
+  white-space:nowrap;
+    -webkit-animation-name:marquee;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-duration:10s;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-name:marquee;
+    -moz-animation-timing-function:linear;
+    -moz-animation-duration:10s;
+    -moz-animation-iteration-count:infinite;
+    -ms-animation-name:marquee;
+    -ms-animation-timing-function:linear;
+    -ms-animation-duration:10s;
+    -ms-animation-iteration-count:infinite;
+    -o-animation-name:marquee;
+    -o-animation-timing-function:linear;
+    -o-animation-duration:10s;
+    -o-animation-iteration-count:infinite;
+    animation-name:marquee;
+    animation-timing-function:linear;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+}
+@-webkit-keyframes marquee {
+  from   { -webkit-transform: translate(0%);}
+  99%,to { -webkit-transform: translate(-100%);}
+}
+@-moz-keyframes marquee {
+  from   { -moz-transform: translate(0%);}
+  99%,to { -moz-transform: translate(-100%);}
+}
+@-ms-keyframes marquee {
+  from   { -ms-transform: translate(0%);}
+  99%,to { -ms-transform: translate(-100%);}
+}
+@-o-keyframes marquee {
+  from   { -o-transform: translate(0%);}
+  99%,to { -o-transform: translate(-100%);}
+}
+@keyframes marquee {
+  from   { transform: translate(0%);}
+  99%,to { transform: translate(-100%);}
+}
+
+#signUp{width: 100%; overflow: hidden; margin-bottom: 40px;}
+.signForm{width: 1440px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around; box-sizing: border-box; padding: 90px 0;}
+	.signForm h2{color: #232323; font-size: 2.4rem; text-align: center; margin-bottom: 2rem;}
+	.signForm form{width: 100%; text-align: center; font-family: 'Raleway', sans-serif; font-weight: 500;}
+	.signForm form a{display: block; font-weight: 600;}
+	.signForm form a.google, .signForm form input{border: 3px solid #111111; box-sizing: border-box; border-radius: 10px; width: 30%; margin: 0 auto; padding: 8px 20px; font-weight: 700; font-size: 1rem; transition: all 0.2s;}
+	.signForm form a.google img{width: 18px; padding-right: 10px;}
+	.signForm form a.google:hover{background: #111111; color: #ffffff; transition: all 0.2s;}
+	.signForm form > p{margin: 20px auto; color: #6d6d7e;}
+	.signForm form input{font-weight: 500; color: #bbbbbb; margin-bottom: 0.8rem;}
+	.signForm a.account{background: black; box-sizing: border-box; border-radius: 10px; width: 30%; margin: 0 auto; padding: 8px 20px; font-weight: 700; font-size: 1.1rem; color: #ffffff; margin-bottom: 0.8rem;}
+	.signForm a.info{margin-bottom: 0.9rem; color: #555555; font-weight: 500;}
+	.signForm a.info span{color: #5554ff;}
+	.signForm a.info1{color: #5554ff;}
+	.signForm a.info3{font-size: 0.72rem;}
+
+footer{width: 100%; background: #f5f5f5; box-sizing: border-box; padding: 50px 0;}
+.footerWrap{width: 1440px; margin: 0 auto; display: flex; justify-content: space-between;}
+.footerWrap dt{font-size: 1.2rem; color: #000000; margin-bottom: 7px;}
+.footerWrap dt.first{font-size: 1.9rem;}
+.footerWrap dd{cursor: pointer; color: #222222; font-family: 'Raleway', sans-serif; font-weight: 500; line-height: 3.5; font-size: 0.85rem;}
+.footerWrap dd i{padding-right: 6px;}
+.footerWrap dd:hover{text-decoration: underline;}
+
+#gnbMo{position: fixed; width: 50%; height: 100%; top:0px; left:0px; z-index: 30; display: none; background: linear-gradient(to bottom, #ffffff, #ffffff 80%, transparent); border-right: 1px solid #eeeeee;}
+#gnbMo ul{width: 200px; height: 300px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#gnbMo ul a{display: block; width: 100%; height: 50px; text-align: center; font: bold 18px/3 "arial"; color: #111111; opacity: 0.9; transition: all 0.5s;}
+#gnbMo ul a:hover{transform:scale(1.4); opacity:1;}
+#gnbMo>a{position: absolute; top: 20px; right: 20px; font: 20px/1.5 arial, sna-serif; color: #555555;}
+
+@media screen and (min-width:900px) and (max-width:1199px) {
+	html{font-size: 14px;}
+	#header{width: 100%; height: 70px;}
+	#gnb{display:none;}
+	h1{position: relative; top: 50%; left: 98%; transform: translate(0%, -10%);}
+	.btnMenu{font-size: 3rem; position:absolute; top: 0px; left: 2%; display: block;}
+
+	#visualWrap{height: 320px;}
+	.visual{width: 100%; height: 320px;}
+	.visual img{width: 200px; left: 15%;}
+	.visual img.hex{width: auto; left: 75%;}
+	.txtBox{width: 390px; height: 140px; top: 65px;}
+	.txtBox h2{font-size: 3.8rem;}
+
+	#con1{width: 100%; flex-wrap: wrap;}
+	.conBanner3{margin-top: 0;}
+	.awards{width: 80%; height: 900px; margin-bottom: 50px;}
+	.awards ul li{flex-basis: 49%; height: 40%;}
+	
+	#designers .designWrap{width: 100%; padding: 50px 66px 150px;}
+	.designWrap .contents .textFlow{display: none;}
+	.designWrap .contents > .conR{height: 400px; width: 50%;}
+	.designWrap .contents > .conR ul li img{height: 100%;}
+	.signForm{width: 100%; padding: 40px 0;}
+	.footerWrap{width: 100%; justify-content: space-around;}
+}
+@media screen and (min-width:500px) and (max-width:899px){
+	html{font-size: 12px;}
+	#header{width: 100%; height: 70px;}
+	#gnb{display:none;}
+	h1{position: relative; top: 50%; left: 98%; transform: translate(0%, -10%);}
+	.btnMenu{font-size: 3rem; position:absolute; top: 0px; left: 2%; display: block;}
+
+	#visualWrap{height: 360px;}
+	.visual{width: 100%; height: 320px;}
+	.visual img{width: 200px; left: -6%;}
+	.visual img.hex{width: auto; left: 75%;}
+	.txtBox{width: 390px; height: 140px; top: 65px;}
+	.txtBox h2{font-size: 3.8rem;}
+
+	#con1{width: 100%; flex-wrap: wrap;}
+	.conBanner3{margin-top: 0;}
+	.rank{width: 90%; margin: 50px 0; height: 90%;}
+	.rank h2{text-align: center; font-size: 1.8rem;}
+	.rank ul{display: flex; flex-direction: column; justify-content: initial; align-items: center;}
+	.rank li{font-size: 1.8rem; width: 80%;}
+	.rank li h5{margin: 0;}
+	.rank > div{padding: 0; background: none;}
+	.sns{width: 90%; margin: 50px 0; height: 340px;}
+	.sns h2{text-align: center; font-size: 1.8rem;}
+	.sns ul li{justify-content: center;}
+	.sns ul a{font-size: 2.1rem; height: 65px;}
+	.awards{display: none;}
+	
+	#designers .designWrap{width: 100%; padding: 50px 66px 60px;}
+	.designWrap .contents .textFlow{display: none;}
+	.designWrap .contents > .conR{height: 400px; width: 50%;}
+	.designWrap .contents > .conR ul li img{height: 100%;}
+	.signForm{width: 100%; padding: 40px 0;}
+	.footerWrap{width: 100%; justify-content: space-around;}
+	
+	.signForm form a.google, .signForm form input, .signForm a.account{width: 50%;}
+	.footerWrap{justify-content: space-between; flex-wrap: wrap;}
+	.footerWrap dl{width: 46%; padding: 0 2%;}
+	.footerWrap dl.menu1{width: 100%; display: flex;}
+	.footerWrap dl.menu1 dd{display: none;}
+	.footerWrap dt{font-size: 2rem;}
+	.footerWrap dl dt.first{font-size: 2rem; margin-bottom: 15px;}
+	.footerWrap dd{font-size: 1rem;}
+}
+
+@media screen and (min-width:375px) and (max-width:499px){
+	html{font-size: 11px;}
+	#header{width: 100%; height: 70px;}
+	h1{position: relative; top: 0%; left: 100%; transform: translate(0%, -10%);}
+	h1 img{width: 30px;}
+	#gnb{display:none;}
+	#gnbMo{width: 70%;}
+	#gnbMo ul{top: 38%;}
+	.btnMenu{font-size: 3rem; position:absolute; top: 5px; left: 4%; display: block;}
+
+	#visualWrap{height: 360px;}
+	.visual{width: 100%; height: 320px;}
+	.visual img{width: 127px; left: -12%; top: 37%;}
+	.visual img.hex{width: auto; left: 75%; z-index: -1;}
+	.txtBox{width: 390px; height: 140px; top: 113px;}
+	.txtBox h2{font-size: 3.8rem;}
+
+	#con1{width: 100%; flex-wrap: wrap;}
+	.conBanner3, .conBanner2{margin-top: 0;}
+	.rank{width: 90%; margin: 50px 0; height: 90%;}
+	.rank h2{text-align: center; font-size: 1.8rem;}
+	.rank ul{display: flex; flex-direction: column; justify-content: initial; align-items: center;}
+	.rank li{font-size: 1.8rem; width: 80%;}
+	.rank li h5{margin: 0;}
+	.rank > div{padding: 0; background: none;}
+	.sns{width: 90%; margin: 50px 0; height: 340px;}
+	.sns h2{text-align: center; font-size: 1.8rem;}
+	.sns ul li{justify-content: center;}
+	.sns ul a{font-size: 2.1rem; height: 65px;}
+	.awards{display: none;}
+	
+	#designers .designWrap{width: 100%; padding: 50px 20px;}
+	.designWrap .contents .textFlow{display: none;}
+	.designWrap .contents > .conL{width: 94%;}
+	.designWrap .contents > .conR{display: none;}
+	.designWrap .contents > .conL ul li.hoverL{margin-bottom: 3.8rem;}
+	.signForm{width: 100%; padding: 40px 0;}
+	.footerWrap{width: 100%; justify-content: space-around;}
+	
+	#signUp{margin: 0;}
+	.signForm form a.google, .signForm form input, .signForm a.account{width: 65%;}
+	footer{padding: 20px;}
+	.footerWrap{justify-content: space-around; flex-wrap: wrap;}
+	.footerWrap dl{display: none;}
+	.footerWrap dl.menu1{width: 100%; display: block;}
+	.footerWrap dl.menu1 dd{font-size: 1.3rem;}	
+}
+
