@@ -129,7 +129,6 @@ li {
 	}
 }
 
-::-moz-selectionm
 .wrapper {
     position: relative;
     width: 100%;
@@ -196,6 +195,7 @@ li {
 			bottom: 0;
 		}
 	}
+
 	.active {
 		padding: .3rem 1rem;
 		font-weight: 800;
@@ -204,6 +204,15 @@ li {
 		border-radius: 3rem;
 		color: #fff;
 		transition: all .3s;
+	}
+	
+	@media (max-width: 1023px) {
+		&__item {
+			font-size: 1.2rem;
+		}
+		.active {
+			font-size: 1.3rem;
+		}
 	}
 }
 
@@ -280,7 +289,7 @@ li {
 	top: 22%;
 	left: 40%;
 	width: 16%;
-	height: 400px;
+	height: 46vh;
 	box-sizing: border-box;
 	overflow: hidden;
 	background: none;
@@ -300,6 +309,14 @@ li {
 			border: 1px solid #eeeeee;
 			transition: all 4s .3s;
 		}
+	}
+}
+
+@media (max-width: 1023px) {
+	.mobile {
+		top: 30%;
+		width: 17%;
+		height: 43vh;
 	}
 }
 
@@ -334,8 +351,8 @@ li {
 	box-sizing: border-box;
 	
 	h4 {
-		margin-bottom: 1.44455%;
-		font: 700 2.5rem 'Pretendard Variable', sans-serif;
+		margin-bottom: 1.444%;
+		font: 700 2.2rem 'Pretendard Variable', sans-serif;
 		letter-spacing: -1px;
 	}
 
@@ -347,6 +364,17 @@ li {
 		background: #000;
 		border-radius: 6px;
 		color: #fff;
+	}
+
+	@media (max-width: 1023px) {
+		h4 {
+			font-size: 2rem;
+			margin-bottom: 2%;
+		}
+
+		.sub-text {
+			font-size: 1.1rem;
+		}
 	}
 }
 
@@ -367,6 +395,12 @@ li {
 			font-size: 1.3rem;
 			color: #222222;
 			letter-spacing: 1px;
+		}
+	}
+
+	@media (max-width: 1023px) {
+		&__item {
+			font-size: .85rem;
 		}
 	}
 }
@@ -410,6 +444,12 @@ li {
 	}
 }
 
+@media (max-width: 1023px) {
+	.sc-title {
+		padding-bottom: 0vh;
+	}
+}
+
 // tag
 .tag-list {
 	display: flex;
@@ -439,7 +479,7 @@ li {
 // main
 .sc-visual {
 	position: relative;
-	width: 1440px;
+	width: 100%;
 	height: 100vh;
 	margin: 9vh auto 12vh;
 	text-align: center;
@@ -450,7 +490,7 @@ li {
 		box-sizing: border-box;
 	}
 
-	&__title{
+	&__title {
 		position: relative;
 		padding-top: 10vh;
 		font: 400 8rem 'Italiana', serif;
@@ -470,6 +510,7 @@ li {
 			font-size: 3rem;
 		}
 	}
+
 	.link {
 		width: 8rem;
 		height: 8rem;
@@ -536,7 +577,7 @@ li {
 			position: absolute;
 			top: 2%;
 			left: auto;
-			right: -2%;
+			right: 0;
 			width: 18vw;
 			opacity: .4;
 		}
@@ -557,6 +598,26 @@ li {
 		line-height: 20px;
 		letter-spacing: 0;
 		color: #abad7f;
+	}
+
+	@media (max-width: 1023px) {
+		&__title {
+			font-size: 6rem;
+
+			span {
+				font-size: 8rem;
+			}
+
+			em {
+				font-size: 2.5rem;
+				bottom: 10%;
+			}
+		}
+
+		.link {
+			width: 6rem;
+			height: 6rem;
+		}
 	}
 }
 
@@ -651,6 +712,11 @@ li {
 	border: none;
 	box-shadow: 0px 3px 4px #e9e9e9;
 
+	@media (max-width: 1023px) {
+		width: 38vh;
+		height: 38vh;
+	}
+
 	&__contain {
 		&__item {
 			img{
@@ -717,7 +783,7 @@ li {
 				p {
 					position: absolute;
 					left: 50%;
-					bottom: 73%;
+					top: 20%;
 					width: 80%;
 					padding: 0 10px;
 					transform: translate(-50%, 0);
@@ -726,7 +792,18 @@ li {
 					font-size: 1rem;
 					color: #fff;
 				}
-			}
+				@media (max-width: 1023px) {
+					p {
+						top: 10%;
+						font-size: .9rem;
+					}
+
+					span {
+						top: 18%;
+						font-size: 3rem;
+					}
+				}
+			}	
 		}
 
 		&:hover &__info {
@@ -740,22 +817,32 @@ li {
 	}
 }
 
+
+
 // mobile
 .sc-mobile__contents {
 	flex-flow: row-reverse;
 
 	.project-item {
-		top: -7rem;
-		left: -12rem;
+		top: -5rem;
+		left: -10rem;
 		z-index: 1000;
-		width: 19rem;
-		height: 37rem;
+		width: 300px;
+		height: 600px;
 		border-radius: 3rem;
 		transform: rotateZ(-15deg);
 		box-shadow: 2px 14px 40px -20px rgba(0, 0, 0, .5);
 		background: none;
+
+		@media (max-width: 1023px) {
+			left: -7rem;
+			top: -6rem;
+			width: 30%;
+			height: 71vh;
+		}
 	}
-	
+
+
 	.mobile-container {
 		position: absolute;
 		top: 0rem;
@@ -772,6 +859,14 @@ li {
 
 	.project-info {
 		width: 50%;
+	}
+
+	.project-list {		
+		@media (max-width: 1023px) {
+			&__item:first-child {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -841,6 +936,14 @@ li {
 		width: -webkit-fill-available;
 		height: 68.2vh;
 		border: 1px solid #111;
+	}
+
+	.project-list {		
+		@media (max-width: 1023px) {
+			&__item:first-child {
+				display: none;
+			}
+		}
 	}
 }
 
