@@ -213,7 +213,7 @@
 			</ul>
 		</div>
 	</footer>
-	
+
 	<!-- JS LINK -->
 	<script src="https://kit.fontawesome.com/5d97453219.js" crossorigin="anonymous"></script>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -229,14 +229,14 @@
 				parallax: true,
 				particleRadius: 3,
 			});
-		});
-		var progressIndicator = '<div id="pageProgress"></div>';
-		$('body').append(progressIndicator);
-
-		$(window).on('scroll', function(){
-		var currentPercentage = ($(window).scrollTop() / ($(document).outerHeight() - $(window).height())) * 100;
-			$('#pageProgress').width(currentPercentage+'%');
-			$('#sec2 img.hulk').width(currentPercentage*4+'%');
+			var progressIndicator = '<div id="pageProgress"></div>';
+			$('body').append(progressIndicator);
+	
+			$(window).on('scroll', function(){
+			var currentPercentage = ($(window).scrollTop() / ($(document).outerHeight() - $(window).height())) * 100;
+				$('#pageProgress').width(currentPercentage+'%');
+				$('#sec2 img.hulk').width(currentPercentage*4+'%');
+			});
 		});
 	</script>
 </body>
